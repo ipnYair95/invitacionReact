@@ -1,0 +1,55 @@
+.header {
+
+    width: 100%;
+    height: 45px;
+    display: flex;
+    position: fixed;
+    padding: 0px 16px;    
+    z-index: 999;
+
+    .customHeader {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .menuIcon {
+            color: var(--primary);
+        }
+
+        .menuItems{
+            display: none;
+
+            *{
+                color: var(--primary);
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .header {
+
+        .customHeader {
+            justify-content: flex-end;
+
+            .menuIcon {
+                display: none;
+            }
+
+            .menuItems{
+                display: block;
+            }
+
+        }
+
+    }
+
+
+
+}

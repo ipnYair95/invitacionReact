@@ -1,15 +1,36 @@
 import styles from './App.module.scss';
 
 import { MainLayout } from './layout'
-import { Box } from '@mui/material';
+import { Box, CssBaseline, ThemeProvider, createTheme, useTheme } from '@mui/material';
+
+const breakpointOverrides = {
+  xs: 0,
+  sm: 576,
+  md: 768,
+  lg: 992,
+  xl: 1200
+};
+
+const getCustomTheme = (theme: any) => createTheme({
+  ...theme,
+  breakpoints: { values: { ...breakpointOverrides } },
+  typography: {
+    fontFamily: ['Dancing Script', 'Inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif'].join(','),
+  }
+});
 
 
 function App() {
 
+  const theme = useTheme();
+
   return (
-    <Box className={styles.container} >    
-      <MainLayout />
-    </Box>
+    <ThemeProvider theme={getCustomTheme(theme)}>
+      <CssBaseline />
+      <Box className={styles.container} >
+        <MainLayout />
+      </Box>
+    </ThemeProvider>
   )
 }
 

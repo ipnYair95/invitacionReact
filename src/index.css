@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
 :root {
 
-  --primary: #391ce3;
-  --secondary: #6a48ea;
-  --color1: #9c75f1;
-  --color2: #cda1f8;
-  --color3: #ffceff;
+  --primary: rgb(58, 28, 227);
+  --primary_rgb: 58, 28, 227;
+
+  --secondary: rgb(107, 72, 234);
+  --secondary_rgb: 107, 72, 234;
+
+  --color1: rgb(155, 116, 241);
+  --color1_rgb: 155, 116, 241;
+
+  --color2: rgb(204, 160, 248);
+  --color2_rgb: 204, 160, 248;
+  
+  --color3: rgb(255, 204, 255);
+  --color3_rgb: 255, 204, 255;
 
 }
 
 body {
   width: 100%;
   height: 100%;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif !important;
+  font-family: 'Dancing Script', Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
