@@ -1,8 +1,7 @@
-import React from 'react'
 import { Box, Typography } from '@mui/material';
 import styles from './CountdownCustom.module.scss';
 
-export const CountdownCustom = ({ days, hours, minutes, seconds }) => {
+export const CountdownCustom = ({ days, hours, minutes, seconds } : any) => {
     return (
         <Box className={styles.countdown} >
 
