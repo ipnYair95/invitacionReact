@@ -1,4 +1,4 @@
-import { Box, Drawer, List, ListItem, ListItemButton, ListItemText, Typography } from '@mui/material';
+import { Box, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import { navItems } from '../../constants';
 import styles from './Menu.module.scss';
 

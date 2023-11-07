@@ -2,7 +2,7 @@ import { Header } from "../components";
 import { Home, Summary } from "../pages";
 
 
-export const MainLayout = (props: any) => {
+export const MainLayout = () => {
 
   return (
     <>

@@ -26,19 +26,30 @@ export const Home = () => {
 
       <Box className={styles.content}>
 
-        <Typography className={styles.title} >
-          Mis XVIII años
-        </Typography>
+        <Box className={styles.grid}  >
 
-        <Box className={styles.card} >
+          <Box className={styles.item} >
 
-          <Typography className={styles.date} >
-            9 de diciembre de 2023
-          </Typography>
+            <Typography className={styles.title}> XVIII AÑOS </Typography>
 
-          <Typography className={styles.name} >
-            Yuby
-          </Typography>
+            <hr />
+
+            <Typography className={styles.date}> 9 de Diciembre de 2023 </Typography>
+            <Typography className={styles.letter}> En tus quince años, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
+
+          </Box>
+
+          <Box className={styles.item} >
+
+            <Box className={styles.img}>
+              <img src={IMG.LOGO} alt="" />
+            </Box>
+
+            <Box className={styles.name}>
+              <img src={IMG.NAME} alt="" />
+            </Box>
+
+          </Box>
 
         </Box>
 
@@ -46,8 +57,10 @@ export const Home = () => {
           Bienvenido
         </Button>
 
-        <Countdown date={'2023-12-09T05:00:00'} renderer={renderer} />
+      </Box>
 
+      <Box className={styles.timer}>
+        <Countdown date={'2023-12-09T05:00:00'} renderer={renderer} />
       </Box>
 
     </Box>

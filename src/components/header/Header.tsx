@@ -1,13 +1,13 @@
 import styles from './Header.module.scss';
 import { Box, Button, IconButton } from "@mui/material"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { navItems } from "./constants";
 import { Menu } from "./components";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useScrolling } from '../../hooks/useScrolling';
 
 
-export const Header = (props: any) => {
+export const Header = () => {
 
   const [mobileOpen, setMobileOpen] = useState(false);
   const { scrollY } = useScrolling();

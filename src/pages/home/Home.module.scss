@@ -9,7 +9,7 @@
     background-position: center center;
 
     .content {
-        padding: 45px 16px 16px 16px;
+        padding: 45px 16px;
         width: 100%;
         height: 100%;
         opacity: 1;
@@ -17,66 +17,95 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;        
+        align-items: center;
 
-        .title {
-            font-size: 48px;
-            color: var(--primary);
-            font-weight: 500;
-            text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
-            text-align: center;
-        }
+        .grid {
 
-        .card {
-
-            width: 80%;
-            height: calc(100vh - 80%);
-            border-radius: 4px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: rgba(var(--color3_rgb), 0.4);
-            padding: 16px;
-            position: relative;
             gap: 16px;
 
-            .date{
-                font-size: 16px;
-                color: #000000;
-                font-weight: bold;
+            .item {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 16px;
             }
 
-            .name {
-                font-size: 42px;
-                color: var(--secondary);
-                font-weight: 500;
+            .title {
+                font-size: 48px;
+                color: var(--primary);
+                font-weight: 400;
                 text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
                 text-align: center;
+                letter-spacing: 4px;
             }
-           
+
+            .letter {
+                font-size: 14px;
+                color: var(--secondary);
+                font-weight: 500;
+                text-align: center;
+            }
+
+            .img {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 16px;
+
+                img {
+                    border-radius: 50%;
+                    width: 45%;
+                    height: 100%;
+                }
+            }
+
+            .date {
+                font-size: 16px;
+                color: var(--color1);
+                text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
+                letter-spacing: 3px;
+                text-align: center;
+            }
+
+            hr {
+                width: 100%;
+                background-color: var(--color1);
+
+            }
+
+            .name{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
         }
 
-        .button{                
-            bottom: -17px;
+
+        .button {
             background: var(--color3);
-            color: #000000;
+            color: var(--primary);
             text-transform: none;
-            font-weight: bold;
+            font-weight: 400;
             font-size: 20px;
             padding: 8px 16px;
             border-radius: 28px;
             width: 160px;
             height: 40px;
 
-            &:hover{
-                background: var(--color1);
+            &:hover {
+                background: var(--color2);
             }
 
         }
 
 
     }
+
 
 }
 
@@ -91,99 +120,55 @@
 }
 
 
-@media screen and (min-width: 576px) {
-
-    .home {
-    
-    
-        .content {
-         
-            .title {
-                font-size: 48px;
-            }
-    
-            .card {    
-            
-                .date{
-                    font-size: 16px;
-                }
-    
-                .name {
-                    font-size: 42px;
-                }    
-                
-            }
-    
-    
-        }
-    
-    }
-    
-}
-
-@media screen and (min-width: 768px) {
-
-    .home {
-    
-    
-        .content {
-         
-            .title {
-                font-size: 50px;
-            }
-    
-            .card {    
-
-                width: 60%;
-            
-                .date{
-                    font-size: 18px;
-                }
-    
-                .name {
-                    font-size: 44px;
-                }    
-                
-            }
-    
-    
-        }
-    
-    }
-    
-}
-
-
 @media screen and (min-width: 992px) {
 
     .home {
-    
-    
         .content {
-         
-            .title {
-                font-size: 54px;
-            }
-    
-            .card {    
-            
-                width: 55%;
 
-                .date{
-                    font-size: 22px;
+            padding: 100px 16px;
+
+            .grid {
+
+                flex-direction: row;
+
+                .item {
+                    flex: 0.5;
+                    gap: 36px;
                 }
-    
-                .name {
-                    font-size: 48px;
-                }    
-                
+
+                .title {
+                    font-size: 54px;
+                    text-align: left;
+                }
+
+                .date {
+                    font-size: 18px;
+                    text-align: right;
+                }
+
+                .letter {
+                    font-size: 18px;
+                }
+
+
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        border-radius: 50%;
+                        width: calc(100% - 250px);
+                        height: calc(100% - 0px);
+                    }
+                }
+
             }
-    
-    
+
         }
-    
     }
-    
+
 }
 
 
@@ -191,31 +176,31 @@
 @media screen and (min-width: 1200px) {
 
     .home {
-    
-    
         .content {
-         
-            .title {
-                font-size: 58px;
-            }
-    
-            .card {    
 
-                width: 50%;
-            
-                .date{
-                    font-size: 26px;
-                }
-    
-                .name {
-                    font-size: 52px;
-                }    
+            height: 90%;
+
+            .grid{
                 
+                .img {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 16px;
+    
+                    img {
+                        border-radius: 50%;
+                        width: 50%;
+                        height: 100%;
+                    }
+                }
+
             }
-    
-    
+           
         }
-    
     }
-    
+
 }
+
+
