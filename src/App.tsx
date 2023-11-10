@@ -15,7 +15,7 @@ const getCustomTheme = (theme: any) => createTheme({
   ...theme,
   breakpoints: { values: { ...breakpointOverrides } },
   typography: {
-    fontFamily: ['Sansita Swashed', 'sans-serif'].join(','),
+    fontFamily: ['Oregano', 'cursive'].join(','),
   }
 });
 

@@ -1,0 +1,43 @@
+.separator {
+
+    width: 100%;
+    position: relative;
+
+    hr {
+        width: 100%;
+        background-color: var(--primary);
+        font-size: 2px;
+    }
+
+    .icon {
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        width: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);
+
+        .heart {
+            animation: heart 3s linear infinite;
+        }
+
+    }
+
+    @keyframes heart {
+        0% {
+            transform: scale(0.8)
+        }
+
+        50% {
+            transform: scale(1.2)
+        }
+
+        100% {
+            transform: scale(0.8)
+        }
+    }
+
+}

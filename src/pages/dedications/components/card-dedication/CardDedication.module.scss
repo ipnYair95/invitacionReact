@@ -1,0 +1,40 @@
+.card {
+
+    width: 350px;
+    height: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    animation: cardDedicationAnimation 3s linear infinite;
+    border-radius: 4px;
+
+    .to {
+        font-size: 36px;
+        color: var(--primary);
+    }
+
+    .text {
+        font-size: 18px;
+        color: var(--secondary);
+        text-align: center;
+    }
+
+    @keyframes cardDedicationAnimation {
+        0% {
+            transform: translateY(-5%);
+        }
+
+        50% {
+            transform: translateY(0%);
+        }
+
+        100% {
+            transform: translateY(-5%);
+        }
+    }
+
+}

@@ -1,0 +1,19 @@
+.placeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+
+    .places{
+        width: 100%;
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+}

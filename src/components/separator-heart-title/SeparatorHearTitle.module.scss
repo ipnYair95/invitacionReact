@@ -1,0 +1,34 @@
+.textContainer{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    animation: textAnimated 3s linear infinite;
+
+    .text{
+
+        font-size: 24px;
+        color: var(--primary);
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 0px 2px 3px var(--color1);
+
+    }       
+
+    @keyframes textAnimated {
+        0% {
+            transform: translateY(-15%);
+        }
+
+        50% {
+            transform: translateY(0%);
+        }
+
+        100% {
+            transform: translateY(-15%);
+        }
+    }
+
+
+}
