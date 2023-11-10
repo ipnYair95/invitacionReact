@@ -8,6 +8,19 @@ import { CountdownCustom } from './components/countdown';
 
 export const Home = () => {
 
+  const goTo = (e: any) => {
+    
+    e.preventDefault();
+
+    const element: any = document.querySelector("#summary");
+
+    window.scrollTo({
+      top: element!.offsetTop,
+      behavior: "smooth",
+    })
+
+  }
+
   const renderer = ({ days, hours, minutes, seconds }: any) => {
 
     return <CountdownCustom
@@ -53,7 +66,7 @@ export const Home = () => {
 
         </Box>
 
-        <Button className={styles.button} disableRipple >
+        <Button className={styles.button} disableRipple onClick={goTo}>
           Bienvenido
         </Button>
 

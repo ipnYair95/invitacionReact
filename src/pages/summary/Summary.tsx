@@ -3,7 +3,7 @@ import styles from './Summary.module.scss';
 
 export const Summary = () => {
   return (
-    <Box className={styles.summary}>
+    <Box className={styles.summary} id="summary" >
         
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laudantium autem, quam magni dolore eveniet ipsam cum nisi inventore tenetur laborum vero maxime officiis, vitae minima rerum amet iusto similique!
         Laudantium deleniti maiores aliquam, ipsam corporis eveniet libero laboriosam ad quis sapiente architecto suscipit vero nostrum sunt facere mollitia ipsum aspernatur nobis dolores quisquam debitis expedita? Laudantium velit consequuntur voluptate?
