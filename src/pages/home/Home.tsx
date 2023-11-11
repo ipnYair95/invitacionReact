@@ -56,7 +56,7 @@ export const Home = () => {
             <hr />
 
             <Typography className={styles.date}> 9 de Diciembre de 2023 </Typography>
-            <Typography className={styles.letter}> En tus quince años, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
+            <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices dieciocho! </Typography>
 
           </Box>
 
