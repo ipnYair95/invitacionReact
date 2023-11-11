@@ -9,7 +9,7 @@ export const MainLayout = () => {
 
   useEffect(() => {
 
-    const audioElement: any = document.getElementById('vid')!;
+    const audioElement: any = document.getElementById('vid')!;    
     audioElement.play();
 
   }, [])
