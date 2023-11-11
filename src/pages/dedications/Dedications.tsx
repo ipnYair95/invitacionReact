@@ -4,12 +4,11 @@ import { DEDICATIONS } from './constants/constants';
 import { CardDedication } from './components/card-dedication/CardDedication';
 import { nanoid } from 'nanoid';
 import { SpecialDedication } from './components';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Letter } from '../../components';
 import { SECTIONS } from '../../constants/contants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from 'react';
 
 export const Dedications = () => {
 

@@ -1,4 +1,5 @@
 import styles from './App.module.scss';
+import { MUSIC } from './assets/music/constants';
 
 import { MainLayout } from './layout'
 import { Box, CssBaseline, ThemeProvider, createTheme, useTheme } from '@mui/material';
@@ -24,12 +25,30 @@ function App() {
 
   const theme = useTheme();
 
+  const onPlay = () => {
+
+    console.log("click")
+
+    const audioElement: any = document.getElementById('vid')!;
+    audioElement.volume = 0.1;
+    audioElement.loop = true;
+    audioElement.play();
+
+  }
+
   return (
     <ThemeProvider theme={getCustomTheme(theme)}>
+
       <CssBaseline />
+
+      <audio id='vid' controls autoPlay={true} className={styles.audio}   >
+        <source src={MUSIC.MAIN} type="audio/mpeg" />
+      </audio>
+
       <Box className={styles.container} >
-        <MainLayout />
+        <MainLayout onPlay={onPlay} />
       </Box>
+
     </ThemeProvider>
   )
 }

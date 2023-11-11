@@ -14,6 +14,7 @@ import IMG8 from './img8.jpeg';
 import MISA from './misa.jpg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
+import OPEN from './open.svg';
 
 export const IMG = {
     BACKGROUND,
@@ -31,5 +32,6 @@ export const IMG = {
     IMG8,
     MISA,
     FIESTA,
-    SPECIAL
+    SPECIAL,
+    OPEN
 }

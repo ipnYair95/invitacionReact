@@ -26,7 +26,7 @@
 
             .text{
                 font-size: 24px;
-                font-weight: bold;
+                font-weight: bold;               
             }
 
         }
@@ -46,6 +46,10 @@
                 font-size: 24px;                
                 color: var(--color1);
                 text-align: justify;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                letter-spacing: 2px;
             }
 
             .img{
