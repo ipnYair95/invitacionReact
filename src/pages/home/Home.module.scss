@@ -18,6 +18,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        gap: 16px;
 
         .grid {
 
@@ -67,7 +68,7 @@
             .date {
                 font-size: 16px;
                 color: var(--color1);
-                text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
+                text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.66);
                 letter-spacing: 3px;
                 text-align: center;
             }
@@ -119,6 +120,69 @@
     bottom: 0;
     background: rgb(255 255 255 / 50%);
 }
+
+@media screen and (min-width: 576px) {
+
+    .home {
+        .content {            
+
+            .grid {       
+    
+                .title {
+                    font-size: 50px;
+                }
+    
+                .letter {
+                    font-size: 16px;
+                }
+    
+                .img {
+    
+                    img {
+                        width: 35%;
+                    }
+                }
+    
+                .date {
+                    font-size: 18px;                    
+                }
+    
+                .name{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .home {
+        .content {
+
+            .grid {       
+    
+                .img {
+    
+                    img {
+                        width: 30%;
+                        border-radius: 50%;
+                    }
+                }   
+
+            }
+
+        }
+    }
+
+}
+
 
 
 @media screen and (min-width: 992px) {
@@ -182,6 +246,20 @@
             height: 90%;
 
             .grid{
+
+                .title {
+                    font-size: 58px;
+                    text-align: left;
+                }
+
+                .date {
+                    font-size: 20px;
+                    text-align: right;
+                }
+
+                .letter {
+                    font-size: 24px;
+                }
                 
                 .img {
                     width: 100%;

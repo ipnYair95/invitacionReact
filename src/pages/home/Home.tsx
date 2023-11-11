@@ -3,16 +3,24 @@ import styles from './Home.module.scss';
 import { IMG } from '../../assets';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
+import { SECTIONS } from '../../constants/contants';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 
 export const Home = () => {
 
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   const goTo = (e: any) => {
-    
+
     e.preventDefault();
 
-    const element: any = document.querySelector("#summary");
+    const element: any = document.querySelector(`#${SECTIONS.SUMMARY}`);
 
     window.scrollTo({
       top: element!.offsetTop,
@@ -33,11 +41,11 @@ export const Home = () => {
   };
 
   return (
-    <Box className={styles.home} sx={{
+    <Box className={styles.home} id={SECTIONS.HOME}  sx={{
       backgroundImage: IMG.BACKGROUND
-    }} >
+    }}  >
 
-      <Box className={styles.content}>
+      <Box className={styles.content} data-aos="zoom-in">
 
         <Box className={styles.grid}  >
 
@@ -72,7 +80,7 @@ export const Home = () => {
 
       </Box>
 
-      <Box className={styles.timer}>
+      <Box className={styles.timer} >
         <Countdown date={'2023-12-09T05:00:00'} renderer={renderer} />
       </Box>
 

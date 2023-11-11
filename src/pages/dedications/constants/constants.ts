@@ -6,7 +6,7 @@ export interface IDedication{
 export const DEDICATIONS: IDedication[] = [
     {
         to: 'Mami',
-        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, suscipit, necessitatibus reprehenderit adipisci pariatur voluptatum nobis sequi enim, officia officiis numquam optio facilis. Quis nostrum porro sint reiciendis! Repellendus, earum?'
+        text: 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, suscipit, necessitatibus reprehenderit adipisci pariatur voluptatum nobis sequi enim, officia officiis numquam optio facilis. Quis nostrum porro sint reiciendis! Repellendus, earum? consectetur adipisicing elit. Quaerat, suscipit, necessitatibus reprehenderit adipisci pariatur voluptatum nobis sequi enim, officia officiis numquam optio facilis. Quis nostrum porro sint reiciendis! Repellendus, earum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, suscipit, necessitatibus reprehenderit adipisci pariatur voluptatum nobis sequi enim, officia officiis numquam optio facilis. Quis nostrum porro sint reiciendis! Repellendus, earum?'
     },
     {
         to: 'Padre',

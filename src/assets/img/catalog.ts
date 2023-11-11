@@ -12,6 +12,8 @@ import IMG6 from './img6.jpeg';
 import IMG7 from './img7.jpeg';
 import IMG8 from './img8.jpeg';
 import MISA from './misa.jpg';
+import FIESTA from './fiesta.jpg';
+import SPECIAL from './special.jpg';
 
 export const IMG = {
     BACKGROUND,
@@ -27,5 +29,7 @@ export const IMG = {
     IMG6,
     IMG7,
     IMG8,
-    MISA
+    MISA,
+    FIESTA,
+    SPECIAL
 }

@@ -1,4 +1,4 @@
-.placeContainer{
+.placeContainer {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,13 +7,26 @@
     gap: 24px;
     padding: 16px;
 
-    .places{
+    .places {
         width: 100%;
-        display: flex;        
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 16px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .placeContainer {
+
+        .places {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
     }
 
 }

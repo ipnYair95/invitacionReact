@@ -1,28 +1,19 @@
+import { nanoid } from 'nanoid';
 import './Stars.scss';
+import StarBorderOutlinedIcon from '@mui/icons-material/StarBorderOutlined';
 
 export const Stars = () => {
     return (
-        <div id="estrellas">            
+        <div id="estrellas">
 
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
+            {
+                Array.from({ length: 16 }).map(() => (
+                    <i key={nanoid()} className="star-icon">
+                        <StarBorderOutlinedIcon />
+                    </i>
+                ))
 
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
-            <i className="fa fa-star"></i>
+            }
 
         </div>
     )

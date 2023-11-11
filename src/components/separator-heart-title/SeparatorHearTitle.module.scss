@@ -32,3 +32,45 @@
 
 
 }
+
+@media screen and (min-width: 768px) {
+
+    .textContainer{     
+    
+        .text{
+    
+            font-size: 26px;       
+    
+        }           
+    
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+
+    .textContainer{     
+    
+        .text{
+    
+            font-size: 28px;       
+    
+        }           
+    
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .textContainer{     
+    
+        .text{
+    
+            font-size: 30px;       
+    
+        }           
+    
+    }
+    
+}

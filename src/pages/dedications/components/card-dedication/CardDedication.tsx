@@ -11,7 +11,12 @@ export const CardDedication = ({ to, text }: IDedication) => {
 
       <SeparatorHeart />
 
-      <Typography className={styles.text} > {text} </Typography>
+      <Box className={styles.content} >
+        <Typography className={styles.text} >
+          {text}
+        </Typography>
+      </Box>
+
 
     </Box>
   )

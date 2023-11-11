@@ -1,8 +1,44 @@
-.container{
+.dedicationsContainer {
+
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 16px;
-    gap: 24px;
+    gap: 16px;
+    flex-direction: column;
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 16px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .special{
+        height: 200px;
+        margin: 36px 0px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;    
+        background-color: var(--color3);
+        padding: 16px 0px;     
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .dedicationsContainer {
+
+        .container {
+            justify-content: space-around;
+        }
+
+    }
+
 }

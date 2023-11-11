@@ -43,7 +43,18 @@
             }
 
             .menuItems{
-                display: block;
+                
+                display: flex;
+                gap: 16px;
+
+
+                .button{
+                    font-size: 18px;
+                    letter-spacing: 2px;  
+                    text-transform: none;                  
+                }
+
+
             }
 
         }

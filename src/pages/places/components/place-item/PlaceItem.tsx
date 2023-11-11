@@ -16,7 +16,9 @@ export const PlaceItem = ({ address, img, placeName, reason, time, url }: IPlace
     <Box className={styles.place} >
 
       <Modal open={isOpen}  >
-        <ModalMap url={url} onClose={onHandleClose} />
+        <>
+          <ModalMap url={url} onClose={onHandleClose} />
+        </>
       </Modal>
 
       <Typography className={styles.reason} > {reason} </Typography>

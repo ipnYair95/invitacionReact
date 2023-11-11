@@ -2,11 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import ReactGA from "react-ga4";
 
-AOS.init();
 ReactGA.initialize("G-H2DKC2NLZN");
 
 ReactGA.send({

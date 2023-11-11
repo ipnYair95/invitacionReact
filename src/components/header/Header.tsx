@@ -5,12 +5,26 @@ import { navItems } from "./constants";
 import { Menu } from "./components";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useScrolling } from '../../hooks/useScrolling';
+import { SECTIONS } from '../../constants/contants';
+import { nanoid } from 'nanoid';
 
 
 export const Header = () => {
 
   const [mobileOpen, setMobileOpen] = useState(false);
+
   const { scrollY } = useScrolling();
+
+  const goTo = ( section: SECTIONS ) => {
+
+    const element: any = document.querySelector(`#${section}`);
+
+    window.scrollTo({
+      top: element!.offsetTop,
+      behavior: "smooth",
+    })
+
+  }
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -22,7 +36,7 @@ export const Header = () => {
       ? scrollY / 255
       : 1;
 
-    return `rgba( 57, 28, 227 , ${opacity} );`
+    return `rgba( 255, 204, 255 , ${opacity} );`
 
   }
 
@@ -40,8 +54,8 @@ export const Header = () => {
         <Box className={styles.menuItems}  >
           {
             navItems.map((item) => (
-              <Button key={item} >
-                {item}
+              <Button className={styles.button} key={nanoid()} onClick={ () => goTo(item.section) }  >
+                {item.title}
               </Button>
             ))
           }
@@ -49,7 +63,7 @@ export const Header = () => {
 
       </Box>
 
-      <Menu handleDrawerToggle={handleDrawerToggle} mobileOpen={mobileOpen} />
+      <Menu handleDrawerToggle={handleDrawerToggle} mobileOpen={mobileOpen} goTo={goTo} />
 
     </Box>
 
