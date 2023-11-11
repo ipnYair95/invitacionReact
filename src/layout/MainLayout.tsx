@@ -2,7 +2,6 @@ import styles from './MainLayout.module.scss';
 import { Box, IconButton } from "@mui/material";
 import { Header, Stars } from "../components";
 import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer } from "../pages";
-import { MUSIC } from '../assets/music/constants';
 import { useEffect, useState } from 'react';
 import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
