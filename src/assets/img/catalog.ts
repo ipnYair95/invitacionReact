@@ -1,4 +1,4 @@
-import BACKGROUND from './background.jpg';
+import BACKGROUND from './background.jpeg';
 import PHOTO from './foto.jpg';
 import LOGO from './logo.svg';
 import NAME from './name.png';

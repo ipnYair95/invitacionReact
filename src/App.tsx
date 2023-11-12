@@ -25,9 +25,7 @@ function App() {
 
   const theme = useTheme();
 
-  const onPlay = () => {
-
-    console.log("click")
+  const onPlay = () => {    
 
     const audioElement: any = document.getElementById('vid')!;
     audioElement.volume = 0.1;
