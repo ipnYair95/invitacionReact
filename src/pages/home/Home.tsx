@@ -23,7 +23,7 @@ export const Home = () => {
     const element: any = document.querySelector(`#${SECTIONS.SUMMARY}`);
 
     window.scrollTo({
-      top: element!.offsetTop,
+      top: element.offsetTop,
       behavior: "smooth",
     })
 
@@ -75,7 +75,7 @@ export const Home = () => {
         </Box>
 
         <Button className={styles.button} disableRipple onClick={goTo}>
-          Bienvenido
+          Acompáñame
         </Button>
 
       </Box>
