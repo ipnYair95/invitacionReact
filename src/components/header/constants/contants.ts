@@ -7,9 +7,9 @@ export interface INavItem{
 
 export const navItems: INavItem[] = [
     {  title: 'Inicio', section: SECTIONS.HOME  },
-    {  title: 'Bienvenido', section: SECTIONS.SUMMARY  },
+    {  title: 'Hola', section: SECTIONS.SUMMARY  },
     {  title: 'Recuerdos', section: SECTIONS.SLIDES  },
     {  title: 'Agradecimientos', section: SECTIONS.DEDICATIONS  },
     {  title: 'Ubicaciones', section: SECTIONS.PLACES  },
-    {  title: 'Requisitos', section: SECTIONS.GIFS  },
+    {  title: '¿Qué traer?', section: SECTIONS.GIFS  },
 ];
