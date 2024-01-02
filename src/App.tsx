@@ -1,8 +1,9 @@
+import { useState } from 'react';
 import styles from './App.module.scss';
 import { MUSIC } from './assets/music/constants';
 
 import { MainLayout } from './layout'
-import { Box, CssBaseline, ThemeProvider, createTheme, useTheme } from '@mui/material';
+import { Box, CssBaseline, ThemeProvider, Typography, createTheme, useTheme } from '@mui/material';
 
 const breakpointOverrides = {
   xs: 0,
@@ -25,12 +26,20 @@ function App() {
 
   const theme = useTheme();
 
+  const [disabled, setDisabled] = useState(true);
+
   const onPlay = () => {    
 
     const audioElement: any = document.getElementById('vid')!;
     audioElement.volume = 0.1;
     audioElement.loop = true;
     audioElement.play();
+
+  }
+
+  if(disabled){
+
+    return <Typography> 404 NOT FOUND </Typography>
 
   }
 
