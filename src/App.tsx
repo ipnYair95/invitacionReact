@@ -26,7 +26,7 @@ function App() {
 
   const theme = useTheme();
 
-  const [disabled, setDisabled] = useState(true);
+  const [disabled, ] = useState(true);
 
   const onPlay = () => {    
 
