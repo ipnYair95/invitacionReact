@@ -50,7 +50,7 @@ export const SlideShow = () => {
               <SwiperSlide key={nanoid()} >
 
                 <Box className={styles.slide} sx={{ backgroundImage: `url(${image})` }} >
-                  ds
+                  
                 </Box>
 
               </SwiperSlide>
