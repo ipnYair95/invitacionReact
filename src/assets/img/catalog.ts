@@ -16,7 +16,7 @@ import MISA from './misa.jpeg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
 import OPEN from './open.svg';
-import INVITATION from './XV AÑOS.pdf';
+import INVITATION from './invitacion.pdf';
 
 export const IMG = {
     BACKGROUND,
