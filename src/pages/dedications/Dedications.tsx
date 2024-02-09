@@ -1,4 +1,4 @@
-import { Box, Modal } from '@mui/material';
+import { Box } from '@mui/material';
 import styles from './Dedications.module.scss';
 import { DEDICATIONS } from './constants/constants';
 import { CardDedication } from './components/card-dedication/CardDedication';
@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 export const Dedications = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [ , setIsOpen] = useState(false);
 
   const dedications = DEDICATIONS;
 
@@ -31,7 +31,7 @@ export const Dedications = () => {
   return (
     <Box className={styles.dedicationsContainer} id={SECTIONS.DEDICATIONS} data-aos="fade-up">
 
-     {/*  <Box className={styles.special} data-aos="fade-up">
+      <Box className={styles.special} data-aos="fade-up">
 
         <Modal open={isOpen} >          
             <SpecialDedication onClose={onClose} />          
@@ -39,7 +39,7 @@ export const Dedications = () => {
 
         <Letter className={styles.letter} onClick={onOpen} />
 
-      </Box> */}
+      </Box>
 
       <Box className={styles.container} data-aos="fade-up">
 
