@@ -34,7 +34,7 @@ function App() {
 
   useEffect(() => {
 
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname });
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname, title: 'Invitacion' });
 
   }, [])
 
