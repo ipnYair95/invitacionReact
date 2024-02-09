@@ -3,9 +3,7 @@ import styles from './Dedications.module.scss';
 import { DEDICATIONS } from './constants/constants';
 import { CardDedication } from './components/card-dedication/CardDedication';
 import { nanoid } from 'nanoid';
-import { SpecialDedication } from './components';
 import { useState, useEffect } from 'react';
-import { Letter } from '../../components';
 import { SECTIONS } from '../../constants/contants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,17 +31,15 @@ export const Dedications = () => {
   return (
     <Box className={styles.dedicationsContainer} id={SECTIONS.DEDICATIONS} data-aos="fade-up">
 
-      <Box className={styles.special} data-aos="fade-up">
+     {/*  <Box className={styles.special} data-aos="fade-up">
 
-        <Modal open={isOpen} >
-          <>
-            <SpecialDedication onClose={onClose} />
-          </>
+        <Modal open={isOpen} >          
+            <SpecialDedication onClose={onClose} />          
         </Modal>
 
         <Letter className={styles.letter} onClick={onOpen} />
 
-      </Box>
+      </Box> */}
 
       <Box className={styles.container} data-aos="fade-up">
 

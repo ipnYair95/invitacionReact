@@ -4,7 +4,7 @@
     .separator {
         width: 100%;
        height: 200px;
-        background: var(--color2);        
+        background: var(--color3);        
         display: flex;
         justify-content: center;
         padding-top: 16px;
@@ -20,6 +20,12 @@
     .content {
 
         position: relative;
+
+        .buttonDownload{
+            color: var(--color1);
+            text-transform: none;
+            font-size: 20px;
+        }
 
         .avatar {
 
@@ -53,6 +59,7 @@
     }
 
 }
+
 
 @media screen and (min-width: 576px) {
 

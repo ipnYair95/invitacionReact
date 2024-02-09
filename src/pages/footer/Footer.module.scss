@@ -13,12 +13,29 @@
         text-shadow: 5px 2px 3px var(--color1);
     }
 
-    .copyright{
-        font-size: 18px;
-        color: #fff;
-        text-shadow: 5px 2px 3px var(--color1);
-    }
+    .info{
 
-    
+        width: 100%;
+        display: flex;
+        justify-content: space-around;   
+
+        .icons{
+            display: flex;
+            gap: 16px;
+
+            .icon{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        .name{
+            color: var(--color1);       
+            font-size: 18px;   
+        }
+
+    }    
 
 }

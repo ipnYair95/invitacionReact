@@ -9,7 +9,7 @@
     background-position: center center;
 
     .content {
-        padding: 45px 16px;
+        padding: 32px 16px 78px;
         width: 100%;
         height: 100%;
         opacity: 1;
@@ -36,16 +36,24 @@
 
             .title {
                 font-size: 48px;
-                color: var(--primary);
+                color: var(--secondary);
                 font-weight: 400;
                 text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
                 text-align: center;
                 letter-spacing: 4px;
             }
 
+            .date {
+                font-size: 20px;
+                color: var(--secondary);
+                text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.66);
+                letter-spacing: 3px;
+                text-align: center;
+            }
+
             .letter {
-                font-size: 14px;
-                color: var(--primary);
+                font-size: 18px;
+                color: var(--secondary);
                 font-weight: 500;
                 text-align: center;
             }
@@ -63,23 +71,18 @@
                     height: 100%;
                     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
                 }
-            }
-
-            .date {
-                font-size: 16px;
-                color: var(--primary);
-                text-shadow: 3px 2px 5px rgba(255, 255, 255, 0.66);
-                letter-spacing: 3px;
-                text-align: center;
-            }
+            }            
 
             hr {
                 width: 100%;
-                background-color: var(--color1);
+                background-color: var(--color3);
 
             }
 
             .name{
+                color: var(--color2);
+                font-family: 'Dancing Script', cursive;
+                font-size: 68px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
@@ -89,8 +92,8 @@
 
 
         .button {
-            background: var(--color3);
-            color: var(--primary);
+            background: var(--primary);
+            color: #fff;
             text-transform: none;
             font-weight: 400;
             font-size: 20px;
@@ -100,7 +103,7 @@
             height: 40px;
 
             &:hover {
-                background: var(--color2);
+                background: var(--secondary);
             }
 
         }
@@ -118,7 +121,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgb(255 255 255 / 50%);
+    background: rgb(255 255 255 / 60%);
 }
 
 @media screen and (min-width: 576px) {
@@ -131,9 +134,13 @@
                 .title {
                     font-size: 50px;
                 }
+
+                .date {
+                    font-size: 20;                    
+                }
     
                 .letter {
-                    font-size: 16px;
+                    font-size: 18px;
                 }
     
                 .img {
@@ -141,10 +148,6 @@
                     img {
                         width: 35%;
                     }
-                }
-    
-                .date {
-                    font-size: 18px;                    
                 }
     
                 .name{
@@ -207,14 +210,17 @@
                 }
 
                 .date {
-                    font-size: 18px;
+                    font-size: 22px;
                     text-align: right;
                 }
 
                 .letter {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
 
+                .name{
+                    font-size: 88px;
+                }
 
                 .img {
                     width: 100%;
@@ -253,12 +259,16 @@
                 }
 
                 .date {
-                    font-size: 20px;
+                    font-size: 24px;
                     text-align: right;
                 }
 
                 .letter {
-                    font-size: 24px;
+                    font-size: 22px;
+                }
+
+                .name{
+                    font-size: 98px;
                 }
                 
                 .img {

@@ -12,8 +12,8 @@ export const MainLayout = ({ onPlay }: any) => {
 
   useEffect(() => {
 
-    const audioElement: any = document.getElementById('vid')!;
-    audioElement.play();
+   const audioElement: any = document.getElementById('vid')!;
+   audioElement.play();
 
   }, [])
 

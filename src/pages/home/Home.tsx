@@ -41,7 +41,7 @@ export const Home = () => {
   };
 
   return (
-    <Box className={styles.home} id={SECTIONS.HOME}  sx={{
+    <Box className={styles.home} id={SECTIONS.HOME} sx={{
       backgroundImage: IMG.BACKGROUND
     }}  >
 
@@ -51,12 +51,12 @@ export const Home = () => {
 
           <Box className={styles.item} >
 
-            <Typography className={styles.title}> XVIII AÑOS </Typography>
+            <Typography className={styles.title}> XV AÑOS </Typography>
 
             <hr />
 
             <Typography className={styles.date}> 9 de Diciembre de 2023 </Typography>
-            <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices dieciocho! </Typography>
+            <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
 
           </Box>
 
@@ -66,9 +66,7 @@ export const Home = () => {
               <img src={IMG.LOGO} alt="" />
             </Box>
 
-            <Box className={styles.name}>
-              <img src={IMG.NAME} alt="" />
-            </Box>
+            <Typography className={styles.name}> Yuby </Typography>
 
           </Box>
 

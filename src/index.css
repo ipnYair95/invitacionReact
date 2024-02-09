@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 
 
 :root {
 
-  --primary: rgb(58, 28, 227);
-  --primary_rgb: 58, 28, 227;
+  --primary: rgb(165, 161, 131);
+  --primary_rgb: rgb(165, 161, 131);
 
-  --secondary: rgb(107, 72, 234);
-  --secondary_rgb: 107, 72, 234;
+  --secondary: rgb(44, 65, 54);
+  --secondary_rgb: rgb(44, 65, 54);
 
-  --color1: rgb(155, 116, 241);
-  --color1_rgb: 155, 116, 241;
+  --color1: rgb(99, 63, 28);
+  --color1_rgb: rgb(99, 63, 28);
 
-  --color2: rgb(204, 160, 248);
-  --color2_rgb: 204, 160, 248;
+  --color2: rgb(133, 98, 49);
+  --color2_rgb: rgb(133, 98, 49);
 
-  --color3: rgb(255, 204, 255);
-  --color3_rgb: 255, 204, 255;
+  --color3: rgb(230, 228, 213);
+  --color3_rgb: rgb(230, 228, 213);
 
 }
 

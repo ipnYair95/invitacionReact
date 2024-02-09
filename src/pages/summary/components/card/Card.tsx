@@ -3,20 +3,21 @@ import { Box, Typography } from '@mui/material';
 import { SeparatorHeart } from '../../../../components';
 
 
-export const Card = () => {
+export const Card = ({ button }: any) => {
   return (
     <Box className={styles.card} >
 
       <Typography className={styles.title} >
-        Mis XVIII Años
+        Mis XV Años
       </Typography>
 
       <SeparatorHeart />
 
       <Typography className={styles.text} >
-        Dejo atrás un mundo y entro a uno nuevo aunque a veces dudo o temo estoy llena de esperanzas y sueños. Tengo la sensación de que estoy construyendo mi propio camino siento alegría y quiero compartirlo rodeada de todos los que quiero.
+        Agradezco a mi familia y hermanos por hacer más especial este día. A todos mis amigos por enseñarme el valor de una verdadera amistad.
       </Typography>
 
+      {button}
 
     </Box>
   )

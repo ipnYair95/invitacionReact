@@ -15,14 +15,14 @@
         justify-content: flex-start;
 
         .menuIcon {
-            color: var(--primary);
+            color: var(--secondary);
         }
 
         .menuItems{
             display: none;
 
             *{
-                color: var(--primary);
+                color: var(--secondary);
             }
 
         }
