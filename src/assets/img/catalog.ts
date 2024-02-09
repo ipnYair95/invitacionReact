@@ -1,5 +1,5 @@
 import BACKGROUND from './background.jpeg';
-import PHOTO from './foto.jpg';
+import PHOTO from './foto.jpeg';
 import LOGO from './logo.jpeg';
 import NAME from './name.png';
 import MAIN from './main.jpeg';
@@ -36,7 +36,7 @@ export const IMG = {
     MISA,
     FIESTA,
     SPECIAL,
-    OPEN
+    OPEN    
 }
 
 export const ASSETS = {

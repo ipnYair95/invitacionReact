@@ -9,7 +9,7 @@
     background-position: center center;
 
     .content {
-        padding: 32px 16px 78px;
+        padding: 35px 16px 80px;
         width: 100%;
         height: 100%;
         opacity: 1;
@@ -82,10 +82,11 @@
             .name{
                 color: var(--color2);
                 font-family: 'Dancing Script', cursive;
-                font-size: 68px;
+                font-size: 45px;
                 width: 100%;
                 display: flex;
                 justify-content: center;
+                text-align: center;
             }
 
         }
@@ -219,7 +220,7 @@
                 }
 
                 .name{
-                    font-size: 88px;
+                    font-size: 70px;
                 }
 
                 .img {
@@ -268,7 +269,7 @@
                 }
 
                 .name{
-                    font-size: 98px;
+                    font-size: 80px;
                 }
                 
                 .img {

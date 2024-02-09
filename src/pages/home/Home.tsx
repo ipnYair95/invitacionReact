@@ -51,7 +51,7 @@ export const Home = () => {
 
           <Box className={styles.item} >
 
-            <Typography className={styles.title}> XV AÑOS </Typography>
+            <Typography className={styles.title}> MIS XV AÑOS </Typography>
 
             <hr />
 
@@ -66,7 +66,7 @@ export const Home = () => {
               <img src={IMG.LOGO} alt="" />
             </Box>
 
-            <Typography className={styles.name}> Nombre </Typography>
+            <Typography className={styles.name}> Kimberly Denis </Typography>
 
           </Box>
 
