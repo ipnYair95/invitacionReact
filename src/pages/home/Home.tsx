@@ -66,7 +66,7 @@ export const Home = () => {
               <img src={IMG.LOGO} alt="" />
             </Box>
 
-            <Typography className={styles.name}> Yuby </Typography>
+            <Typography className={styles.name}> Nombre </Typography>
 
           </Box>
 

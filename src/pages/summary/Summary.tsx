@@ -32,7 +32,7 @@ export const Summary = () => {
       <Box className={styles.content} data-aos="fade-up">
 
         <Box className={styles.avatar} >
-          <img className={styles.img} src={IMG.IMG1} alt="ella" />
+          <img className={styles.img} src={IMG.IMG5} alt="ella" />
         </Box>      
 
         <Box className={styles.card} >
