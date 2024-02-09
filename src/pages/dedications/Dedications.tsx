@@ -8,9 +8,10 @@ import { SECTIONS } from '../../constants/contants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+
 export const Dedications = () => {
 
-  const [ , setIsOpen] = useState(false);
+  const [ , ] = useState(false);
 
   const dedications = DEDICATIONS;
 
@@ -18,7 +19,7 @@ export const Dedications = () => {
     AOS.init();
   }, [])
 
-  const onOpen = () => {
+  /* const onOpen = () => {
 
     setTimeout(() => {
       setIsOpen(true);
@@ -26,12 +27,12 @@ export const Dedications = () => {
 
   }
 
-  const onClose = () => setIsOpen(false);
+  const onClose = () => setIsOpen(false); */
 
   return (
     <Box className={styles.dedicationsContainer} id={SECTIONS.DEDICATIONS} data-aos="fade-up">
 
-      <Box className={styles.special} data-aos="fade-up">
+      {/* <Box className={styles.special} data-aos="fade-up">
 
         <Modal open={isOpen} >          
             <SpecialDedication onClose={onClose} />          
@@ -39,7 +40,7 @@ export const Dedications = () => {
 
         <Letter className={styles.letter} onClick={onOpen} />
 
-      </Box>
+      </Box> */}
 
       <Box className={styles.container} data-aos="fade-up">
 
