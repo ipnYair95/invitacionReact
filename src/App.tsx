@@ -30,7 +30,7 @@ function App() {
   const onPlay = () => {
 
     const audioElement: any = document.getElementById('vid')!;
-    audioElement.volume = 0.1;
+    audioElement.volume = 0.5;
     audioElement.loop = true;
     audioElement.play();
 
