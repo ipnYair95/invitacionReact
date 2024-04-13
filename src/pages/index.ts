@@ -5,3 +5,4 @@ export * from './dedications';
 export * from './places';
 export * from './gifs';
 export * from './footer';
+export * from './people';

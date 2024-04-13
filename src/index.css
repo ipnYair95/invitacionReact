@@ -5,20 +5,25 @@
 
 :root {
 
-  --primary: rgb(165, 161, 131);
-  --primary_rgb: rgb(165, 161, 131);
+  /* claro */
+  --primary: #bf6f8b;
+  --primary_rgb: rgb(255, 170, 198);
 
-  --secondary: rgb(44, 65, 54);
-  --secondary_rgb: rgb(44, 65, 54);
+  /* oscuro */
+  --secondary: #9f526e;
+  --secondary_rgb: rgb(223, 141, 168);
 
-  --color1: rgb(99, 63, 28);
-  --color1_rgb: rgb(99, 63, 28);
+  /* oscuro mayor */
+  --color1: #7f3551;
+  --color1_rgb: rgb(191, 111, 139);
 
-  --color2: rgb(133, 98, 49);
-  --color2_rgb: rgb(133, 98, 49);
+  /* medio */
+  --color2: #df8da8;
+  --color2_rgb: rgb(159, 82, 110);
 
-  --color3: rgb(230, 228, 213);
-  --color3_rgb: rgb(230, 228, 213);
+  /* mas claro */
+  --color3: #ffaac6;
+  --color3_rgb: rgb(127, 53, 81);
 
 }
 

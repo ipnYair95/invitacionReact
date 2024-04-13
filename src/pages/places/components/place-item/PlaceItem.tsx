@@ -15,8 +15,10 @@ export const PlaceItem = ({ address, img, placeName, reason, time, url }: IPlace
   return (
     <Box className={styles.place} >
 
-      <Modal open={isOpen}  >        
-          <ModalMap url={url} onClose={onHandleClose} />        
+      <Modal open={isOpen}  >
+        <Box>
+          <ModalMap url={url} onClose={onHandleClose} />
+        </Box>
       </Modal>
 
       <Typography className={styles.reason} > {reason} </Typography>
@@ -32,7 +34,7 @@ export const PlaceItem = ({ address, img, placeName, reason, time, url }: IPlace
       <Typography className={styles.address} > {address} </Typography>
 
       <Button color='inherit' variant='outlined' onClick={onOpen} >
-        Ver ubicacion
+        Ver ubicación
       </Button>
 
     </Box>

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import styles from './App.module.scss';
-import { MUSIC } from './assets/music/constants';
 import { MainLayout } from './layout'
 import { Box, CssBaseline, ThemeProvider, Typography, createTheme, useTheme } from '@mui/material';
+import { MUSIC } from './assets/music';
 
 const breakpointOverrides = {
   xs: 0,
@@ -25,7 +25,7 @@ function App() {
 
   const theme = useTheme();
 
-  const [disabled,] = useState(false);  
+  const [disabled,] = useState(false);
 
   const onPlay = () => {
 

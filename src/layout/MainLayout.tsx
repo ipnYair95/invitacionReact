@@ -1,8 +1,8 @@
 import styles from './MainLayout.module.scss';
 import { Box, IconButton } from "@mui/material";
-import { Header, Stars } from "../components";
-import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer } from "../pages";
-import { useEffect, useState } from 'react';
+import { Header, Loader, Stars } from "../components";
+import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer, People } from "../pages";
+import { useState } from 'react';
 import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 
@@ -10,17 +10,16 @@ export const MainLayout = ({ onPlay }: any) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(() => {
-
-   const audioElement: any = document.getElementById('vid')!;
-   audioElement.play();
-
-  }, [])
+  const [isLoading, setIsLoading] = useState(true);
 
   const onClick = () => {
 
     setIsOpen(true);
     onPlay();
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
 
   }
 
@@ -41,6 +40,18 @@ export const MainLayout = ({ onPlay }: any) => {
     );
   }
 
+  if (isLoading) {
+
+    return (
+      <Box className={styles.open} >
+
+        <Loader />
+
+      </Box>
+    );
+
+  }
+
   return (
     <Box className={styles.layout}>
 
@@ -51,6 +62,8 @@ export const MainLayout = ({ onPlay }: any) => {
       <Home />
 
       <Summary />
+
+      <People />
 
       <Box className={styles.content}>
 

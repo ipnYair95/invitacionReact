@@ -36,7 +36,7 @@ export const Header = () => {
       ? scrollY / 255
       : 1;
 
-    return `rgba( 165, 161, 131 , ${opacity} );`
+    return `rgba( 255, 170, 198 , ${opacity} );`
 
   }
 

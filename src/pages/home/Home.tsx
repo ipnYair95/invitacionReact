@@ -9,7 +9,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
-
 export const Home = () => {
 
   useEffect(() => {
@@ -51,11 +50,11 @@ export const Home = () => {
 
           <Box className={styles.item} >
 
-            <Typography className={styles.title}> MIS XV AÑOS </Typography>
+            <Typography className={styles.title}> MIS XV AÑOS </Typography>            
 
             <hr />
 
-            <Typography className={styles.date}> 6 de abril de 2024 </Typography>
+            <Typography className={styles.date}> 1 de junio de 2024 </Typography>
             <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
 
           </Box>
@@ -66,7 +65,7 @@ export const Home = () => {
               <img src={IMG.LOGO} alt="" />
             </Box>
 
-            <Typography className={styles.name}> Kimberly Denis </Typography>
+            <Typography className={styles.name}> Maria Fernanda </Typography>
 
           </Box>
 
@@ -79,7 +78,7 @@ export const Home = () => {
       </Box>
 
       <Box className={styles.timer} >
-        <Countdown date={'2024-04-06T00:00:00'} renderer={renderer} />
+        <Countdown date={'2024-06-01T00:00:00'} renderer={renderer} />
       </Box>
 
     </Box>
