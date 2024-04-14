@@ -22,9 +22,21 @@
         position: relative;
 
         .buttonDownload{
+            background-color: var(--color3);
             color: var(--color1);
-            text-transform: none;
             font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+
+            *{
+                margin: 0px;
+            }
+
         }
 
         .avatar {

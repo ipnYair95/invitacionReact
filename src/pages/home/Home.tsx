@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Avatar, Box, Button, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import { IMG } from '../../assets';
 import Countdown from 'react-countdown';
@@ -50,7 +50,7 @@ export const Home = () => {
 
           <Box className={styles.item} >
 
-            <Typography className={styles.title}> MIS XV AÑOS </Typography>            
+            <Typography className={styles.title}> MIS XV AÑOS </Typography>
 
             <hr />
 
@@ -62,7 +62,10 @@ export const Home = () => {
           <Box className={styles.item} >
 
             <Box className={styles.img}>
-              <img src={IMG.LOGO} alt="" />
+              <Avatar src={IMG.LOGO} sx={{
+                width: { xs: 150, sm: 200, md: 250 },
+                height: { xs: 150, sm: 200, md: 250 },
+              }} />
             </Box>
 
             <Typography className={styles.name}> Maria Fernanda </Typography>

@@ -15,11 +15,12 @@
         gap: 16px;
         padding: 16px;
         /* From https://css.glass */
-        background: rgba(127, 53, 81, 0.25);
+        background: rgba(255, 205, 255, 0.65);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.3px);
-        -webkit-backdrop-filter: blur(5.3px);
+        backdrop-filter: blur(6.2px);
+        -webkit-backdrop-filter: blur(6.2px);
+        border: 1px solid rgba(255, 205, 255, 0.93);
 
         .title {
             font-family: Oregano, cursive;

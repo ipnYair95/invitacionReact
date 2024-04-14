@@ -12,9 +12,10 @@ export const People = () => {
 
         <Divider />
 
-        <Typography className={styles.parent} > John Doe </Typography>
+        <Typography className={styles.parent} > Sonia Luz María Zenil Garcia </Typography>
 
-        <Typography className={styles.parent} > Ana Claudia </Typography>
+        <Typography className={styles.parent} > Fernando Raúl Figueroa Munguía </Typography>
+
       </Box>
 
       <Box className={styles.parentCard}>

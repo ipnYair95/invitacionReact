@@ -33,7 +33,7 @@ export const PlaceItem = ({ address, img, placeName, reason, time, url }: IPlace
 
       <Typography className={styles.address} > {address} </Typography>
 
-      <Button color='inherit' variant='outlined' onClick={onOpen} >
+      <Button variant='outlined' onClick={onOpen} >
         Ver ubicación
       </Button>
 

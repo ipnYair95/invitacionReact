@@ -18,13 +18,13 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        gap: 16px;
+        gap: 8px;
 
         .grid {
 
             display: flex;
             flex-direction: column;
-            gap: 16px;
+            gap: 8px;
 
             .item {
                 flex: 1;
@@ -35,7 +35,7 @@
             }
 
             .title {
-                font-size: 48px;
+                font-size: 40px;
                 color: var(--color1);
                 font-weight: 400;
                 text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.66);
@@ -52,7 +52,7 @@
             }
 
             .letter {
-                font-size: 18px;
+                font-size: 16px;
                 color: var(--color1);
                 font-weight: 500;
                 text-align: center;
@@ -63,15 +63,7 @@
                 height: 100%;
                 display: flex;
                 justify-content: center;
-                padding: 16px;
-
-                img {
-                    border-radius: 50%;
-                    width: 45%;
-                    height: 100%;
-                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-                }
-            }            
+            }
 
             hr {
                 width: 100%;
@@ -79,7 +71,7 @@
 
             }
 
-            .name{
+            .name {
                 color: var(--color1);
                 font-family: 'Dancing Script', cursive;
                 font-size: 45px;
@@ -128,35 +120,25 @@
 @media screen and (min-width: 576px) {
 
     .home {
-        .content {            
+        .content {
 
-            .grid {       
-    
-                .title {
-                    font-size: 50px;
-                }
+            .grid {
 
                 .date {
-                    font-size: 20;                    
+                    font-size: 20;
                 }
-    
+
                 .letter {
                     font-size: 18px;
                 }
-    
-                .img {
-    
-                    img {
-                        width: 35%;
-                    }
-                }
-    
-                .name{
+
+
+                .name {
                     width: 100%;
                     display: flex;
                     justify-content: center;
                 }
-                
+
 
             }
 
@@ -165,27 +147,7 @@
 
 }
 
-@media screen and (min-width: 768px) {
 
-    .home {
-        .content {
-
-            .grid {       
-    
-                .img {
-    
-                    img {
-                        width: 30%;
-                        border-radius: 50%;
-                    }
-                }   
-
-            }
-
-        }
-    }
-
-}
 
 
 
@@ -206,7 +168,7 @@
                 }
 
                 .title {
-                    font-size: 54px;
+                    font-size: 48px;
                     text-align: left;
                 }
 
@@ -219,21 +181,8 @@
                     font-size: 20px;
                 }
 
-                .name{
+                .name {
                     font-size: 70px;
-                }
-
-                .img {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-
-                    img {
-                        border-radius: 50%;
-                        width: calc(100% - 250px);
-                        height: calc(100% - 0px);
-                    }
                 }
 
             }
@@ -252,7 +201,7 @@
 
             height: 90%;
 
-            .grid{
+            .grid {
 
                 .title {
                     font-size: 58px;
@@ -268,29 +217,14 @@
                     font-size: 22px;
                 }
 
-                .name{
+                .name {
                     font-size: 80px;
                 }
-                
-                .img {
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    justify-content: center;
-                    padding: 16px;
-    
-                    img {
-                        border-radius: 50%;
-                        width: 50%;
-                        height: 100%;
-                    }
-                }
+
 
             }
-           
+
         }
     }
 
 }
-
-

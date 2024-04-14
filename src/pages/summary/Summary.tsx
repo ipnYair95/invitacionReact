@@ -18,7 +18,7 @@ export const Summary = () => {
     window.open( ASSETS.INVITATION, '_blank' );
   }  
 
-  const button = <Button className={styles.buttonDownload} startIcon={ <Download /> } onClick={onDownload} > Invitación portable </Button>
+  const button = <Button className={styles.buttonDownload} startIcon={ <Download fontSize='large' /> } onClick={onDownload} > </Button>
 
   return (
     <Box className={styles.summary} id={SECTIONS.SUMMARY}  >
