@@ -3,14 +3,14 @@
 
     .separator {
         width: 100%;
-       height: 200px;
-        background: var(--color3);        
+        height: 200px;
+        background: var(--color3);
         display: flex;
         justify-content: center;
         padding-top: 16px;
 
-        .hello {            
-            color: #fff;                        
+        .hello {
+            color: #fff;
             text-shadow: 5px 2px 3px var(--color1);
             font-size: 54px;
         }
@@ -21,7 +21,7 @@
 
         position: relative;
 
-        .buttonDownload{
+        .buttonDownload {
             background-color: var(--color3);
             color: var(--color1);
             font-size: 20px;
@@ -33,27 +33,23 @@
             height: 60px;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 
-            *{
+            * {
                 margin: 0px;
             }
 
         }
 
-        .avatar {
+        .avatarContainer {
 
-            width: 200px;
-            height: 200px;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            right: 50%;
-            transform: translate(-50%, -50%);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            position: relative;
 
-            .img {
-                width: 100%;
-                height: 100%;
-                border-radius: 50%;
-                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            .avatar {
+                position: absolute;
+                top: -80px;
             }
         }
 
@@ -61,7 +57,7 @@
             position: relative;
             width: 100%;
             justify-content: center;
-            margin-top: 150px;
+            margin-top: 100px;
             display: inline-flex;
 
         }
@@ -75,100 +71,99 @@
 
 @media screen and (min-width: 576px) {
 
-    .summary{
-        .separator{
+    .summary {
+        .separator {
 
             height: 220px;
-            
-            .hello{
+
+            .hello {
                 font-size: 60px;
             }
         }
-        .content{
-            .avatar{
-                width: 45%;
+
+        .content {
+
+            .avatarContainer {
+                .avatar {
+                    top: -100px;
+                }
+            }
+
+            .card{
+                margin-top: 125px;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .summary {
+        .separator {
+
+            height: 250px;
+
+            .hello {
+                font-size: 60px;
+            }
+        }
+
+        .content {
+
+            .avatarContainer{
+                .avatar{
+                    top: -120px;
+                }
             }
 
             .card{
                 margin-top: 150px;
             }
+
         }
     }
-    
-}
 
-@media screen and (min-width: 768px) {
-
-    .summary{
-        .separator{
-
-            height: 250px;
-            
-            .hello{
-                font-size: 60px;
-            }
-        }
-        .content{
-            .avatar{
-                width: 250px;
-                height: 250px;
-            }
-
-            .card{
-                margin-top: 200px;
-            }
-        }
-    }
-    
 }
 
 
 @media screen and (min-width: 992px) {
 
-    .summary{
-        .separator{
+    .summary {
+        .separator {
 
-            height: 300px;
-            
-            .hello{
+            height: 275px;
+
+            .hello {
                 font-size: 70px;
             }
+
         }
+
         .content{
-            .avatar{
-                width: 300px;
-                height: 300px;
-            }
 
             .card{
                 margin-top: 200px;
+                margin-bottom: 50px;
             }
+
         }
     }
-    
+
 }
 
 @media screen and (min-width: 1200px) {
 
-    .summary{
-        .separator{
+    .summary {
 
-            height: 300px;
-            
-            .hello{
+        .separator {
+
+            .hello {
                 font-size: 80px;
             }
         }
-        .content{
-            .avatar{
-                width: 350px;
-                height: 350px;   
-            }
 
-            .card{
-                margin-top: 240px;
-            }
-        }
     }
-    
+
 }

@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Avatar, Box, Button, Typography } from '@mui/material'
 import styles from './Summary.module.scss';
 import { ASSETS, IMG } from '../../assets';
 import { Card } from './components';
@@ -15,10 +15,10 @@ export const Summary = () => {
   }, [])
 
   const onDownload = () => {
-    window.open( ASSETS.INVITATION, '_blank' );
-  }  
+    window.open(ASSETS.INVITATION, '_blank');
+  }
 
-  const button = <Button className={styles.buttonDownload} startIcon={ <Download fontSize='large' /> } onClick={onDownload} > </Button>
+  const button = <Button className={styles.buttonDownload} startIcon={<Download fontSize='large' />} onClick={onDownload} > </Button>
 
   return (
     <Box className={styles.summary} id={SECTIONS.SUMMARY}  >
@@ -31,9 +31,12 @@ export const Summary = () => {
 
       <Box className={styles.content} data-aos="fade-up">
 
-        <Box className={styles.avatar} >
-          <img className={styles.img} src={IMG.PHOTO} alt="ella" />
-        </Box>      
+        <Box className={styles.avatarContainer} >
+          <Avatar className={styles.avatar} src={IMG.PHOTO} sx={{
+            width: { xs: 150, sm: 200, md: 250 },
+            height: { xs: 150, sm: 200, md: 250 },
+          }} />
+        </Box>
 
         <Box className={styles.card} >
           <Card button={button} />
