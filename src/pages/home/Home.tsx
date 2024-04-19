@@ -54,7 +54,7 @@ export const Home = () => {
 
             <hr />
 
-            <Typography className={styles.date}> 1 de junio de 2024 </Typography>
+            <Typography className={styles.date}> 25 de mayo de 2024 </Typography>
             <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
 
           </Box>
@@ -81,7 +81,7 @@ export const Home = () => {
       </Box>
 
       <Box className={styles.timer} >
-        <Countdown date={'2024-06-01T00:00:00'} renderer={renderer} />
+        <Countdown date={'2024-05-25T00:00:00'} renderer={renderer} />
       </Box>
 
     </Box>
