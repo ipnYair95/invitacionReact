@@ -6,24 +6,24 @@
 :root {
 
   /* claro */
-  --primary: #9f77ed;
-  --primary_rgb: rgb(159, 119, 237);
+  --primary: #ca7e96;
+  --primary_rgb: rgb(202, 126, 150);
 
   /* oscuro */
-  --secondary: #6f4ce4;
-  --secondary_rgb: rgb(111, 76, 228);
+  --secondary: #b0667e;
+  --secondary_rgb: rgb(176, 102, 126);
 
   /* oscuro mayor */
-  --color1: #3f20db;
-  --color1_rgb: rgb(159, 119, 237);
+  --color1:#954e66;
+  --color1_rgb: rgb(149, 78, 102);
 
   /* medio */
-  --color2: #cfa2f6;
-  --color2_rgb: rgb(207, 162, 246);
+  --color2: #e597ae;
+  --color2_rgb: rgb(229, 151, 174);
 
   /* mas claro */
-  --color3: #ffcdff;
-  --color3_rgb: rgb(255, 205, 255);
+  --color3: #ffafc7;
+  --color3_rgb: rgb(255, 175, 199);
 
 }
 

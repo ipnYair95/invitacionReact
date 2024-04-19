@@ -68,7 +68,7 @@ export const Home = () => {
               }} />
             </Box>
 
-            <Typography className={styles.name}> Maria Fernanda </Typography>
+            <Typography className={styles.name}> Miriam Guadalupe </Typography>
 
           </Box>
 

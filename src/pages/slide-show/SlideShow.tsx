@@ -18,7 +18,7 @@ import { useEffect } from 'react';
 
 export const SlideShow = () => {
 
-  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5];
+  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5, IMG.IMG6, IMG.IMG7, IMG.IMG8, IMG.IMG9, IMG.IMG10, IMG.IMG11];
 
   useEffect(() => {
     AOS.init();
@@ -50,7 +50,7 @@ export const SlideShow = () => {
               <SwiperSlide key={nanoid()} >
 
                 <Box className={styles.slide} sx={{ backgroundImage: `url(${image})` }} >
-                  
+
                 </Box>
 
               </SwiperSlide>
