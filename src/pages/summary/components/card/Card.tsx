@@ -14,7 +14,7 @@ export const Card = ({ button }: any) => {
       <SeparatorHeart />
 
       <Typography className={styles.text} >
-        Agradezco a mi familia y hermanos por hacer más especial este día. A todos mis amigos por enseñarme el valor de una verdadera amistad.
+        En este día especial, agradezco a quienes han sido parte de mi vida hasta ahora. Hoy celebro no solo mi crecimiento, sino también el amor y el apoyo que he recibido. Que este nuevo capítulo esté lleno de aventuras, risas y momentos inolvidables. ¡Gracias por acompañarme en este viaje y por ser parte de mi historia!
       </Typography>
 
       {button}
