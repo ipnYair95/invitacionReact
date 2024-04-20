@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, IconButton } from "@mui/material";
 import { Header, Loader, Stars } from "../components";
-import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer, People } from "../pages";
+import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer, People, MoneyCards } from "../pages";
 import { useState } from 'react';
 import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
@@ -74,6 +74,8 @@ export const MainLayout = ({ onPlay }: any) => {
         <Places />
 
         <Gifs />
+
+        <MoneyCards />
 
         <Footer />
 

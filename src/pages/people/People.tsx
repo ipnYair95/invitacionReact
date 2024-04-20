@@ -12,9 +12,9 @@ export const People = () => {
 
         <Divider />
 
-        <Typography className={styles.parent} > Sonia Luz María Zenil Garcia </Typography>
+        <Typography className={styles.parent} > Juan Manuel Correo Marcelino </Typography>
 
-        <Typography className={styles.parent} > Fernando Raúl Figueroa Munguía </Typography>
+        <Typography className={styles.parent} > Diana Alvarez Hernández </Typography>
 
       </Box>
 
@@ -23,9 +23,9 @@ export const People = () => {
 
         <Divider />
 
-        <Typography className={styles.parent} > Maria Patricia Hernández Munguía </Typography>
+        <Typography className={styles.parent} > Bruno Armando Muciño Ramírez </Typography>
 
-        <Typography className={styles.parent} > Braulio Miguel Ruiz Martínez </Typography>
+        <Typography className={styles.parent} > Sandra Cristina Hernández Aguilar </Typography>
       </Box>
 
 

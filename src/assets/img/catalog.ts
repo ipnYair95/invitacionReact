@@ -18,6 +18,7 @@ import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
 import OPEN from './open.svg';
 import INVITATION from './invitacion.pdf';
+import QR from './qr.jpg';
 
 export const IMG = {
     BACKGROUND,
@@ -38,7 +39,8 @@ export const IMG = {
     MISA,
     FIESTA,
     SPECIAL,
-    OPEN    
+    OPEN,
+    QR    
 }
 
 export const ASSETS = {
