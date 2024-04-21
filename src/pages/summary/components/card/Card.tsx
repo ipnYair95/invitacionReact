@@ -1,12 +1,9 @@
 import styles from './Card.module.scss';
 import { Box, Typography } from '@mui/material';
 import { SeparatorHeart } from '../../../../components';
-import { useState } from 'react';
 
 
 export const Card = ({ button }: any) => {
-
-  const [temporal, ] = useState(false);
 
   return (
     <Box className={styles.card} >
@@ -21,7 +18,7 @@ export const Card = ({ button }: any) => {
         En este día especial, agradezco a quienes han sido parte de mi vida hasta ahora. Hoy celebro no solo mi crecimiento, sino también el amor y el apoyo que he recibido. Que este nuevo capítulo esté lleno de aventuras, risas y momentos inolvidables. ¡Gracias por acompañarme en este viaje y por ser parte de mi historia!
       </Typography>
 
-      { temporal && button}
+      {button}
 
     </Box>
   )
