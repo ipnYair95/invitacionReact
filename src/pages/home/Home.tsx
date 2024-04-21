@@ -63,8 +63,8 @@ export const Home = () => {
 
             <Box className={styles.img}>
               <Avatar src={IMG.LOGO} sx={{
-                width: { xs: 150, sm: 200, md: 250 },
-                height: { xs: 150, sm: 200, md: 250 },
+                width: { xs: 150, sm: 200, md: 250, lg: 300 },
+                height: { xs: 150, sm: 200, md: 250, lg: 300 },
               }} />
             </Box>
 

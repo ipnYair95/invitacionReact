@@ -1,11 +1,18 @@
 import { Box, Divider, Typography } from "@mui/material"
 import styles from './People.module.scss';
+import { useEffect } from "react";
+import AOS from 'aos';
 
 
 
 export const People = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
-    <Box className={styles.people} >
+    <Box className={styles.people} data-aos="fade-up">
 
       <Box className={styles.parentCard}>
         <Typography className={styles.title} > Mis padres </Typography>

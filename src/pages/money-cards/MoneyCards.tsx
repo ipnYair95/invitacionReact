@@ -2,10 +2,17 @@ import { Box, Typography } from '@mui/material';
 import styles from './MoneyCards.module.scss' ;
 import { SeparatorHearTitle } from '../../components';
 import { IMG } from '../../assets';
+import { useEffect } from 'react';
+import AOS from 'aos';
 
 export const MoneyCards = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
-    <Box className={styles.moneyCards}>
+    <Box className={styles.moneyCards} data-aos="fade-up">
 
         <SeparatorHearTitle text='Lluvia de Sobres' />
 
