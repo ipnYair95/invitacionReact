@@ -199,8 +199,9 @@
     .home {
         .content {
 
-            height: 90%;
-            justify-content: center;
+            height: 100%;
+            padding-top: 36px;
+            justify-content: space-around;
             align-items: center;
 
             .grid {
