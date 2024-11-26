@@ -14,13 +14,6 @@
         flex-direction: column;
         gap: 16px;
         padding: 16px;
-        /* From https://css.glass */
-        background: rgba(202, 126, 150, 0.37);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        border: 1px solid rgba(202, 126, 150, 0.3);
 
         .title {
             font-family: Oregano, cursive;
@@ -32,21 +25,7 @@
         .parent {
             color: var(--secondary);
             font-size: 20px;
-            text-align: right;
-        }
-
-    }
-
-}
-
-@media (width >=900px) {
-
-    .people {
-
-        justify-content: space-around;
-
-        .parentCard {
-            width: 300px;
+            text-align: center;            
         }
 
     }

@@ -1,25 +1,16 @@
 .summary {
-    width: 100%;
-
-    .separator {
-        width: 100%;
-        height: 200px;
-        background: var(--color3);
-        display: flex;
-        justify-content: center;
-        padding-top: 16px;
-
-        .hello {
-            color: #fff;
-            text-shadow: 5px 2px 3px var(--color1);
-            font-size: 54px;
-        }
-
-    }
+    width: 100%;   
 
     .content {
 
-        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+    
 
         .buttonDownload {
             background-color: var(--color3);
@@ -38,129 +29,11 @@
 
         }
 
-        .avatarContainer {
-
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            position: relative;
-
-            .avatar {
-                position: absolute;
-                top: -80px;
-            }
-        }
-
         .card {
             position: relative;
-            width: 100%;
-            justify-content: center;
-            margin-top: 100px;
+            width: 80%;
+            justify-content: center;            
             display: inline-flex;
-
-        }
-
-
-
-    }
-
-}
-
-
-@media screen and (min-width: 576px) {
-
-    .summary {
-        .separator {
-
-            height: 220px;
-
-            .hello {
-                font-size: 60px;
-            }
-        }
-
-        .content {
-
-            .avatarContainer {
-                .avatar {
-                    top: -100px;
-                }
-            }
-
-            .card{
-                margin-top: 125px;
-            }
-
-        }
-    }
-
-}
-
-@media screen and (min-width: 768px) {
-
-    .summary {
-        .separator {
-
-            height: 250px;
-
-            .hello {
-                font-size: 60px;
-            }
-        }
-
-        .content {
-
-            .avatarContainer{
-                .avatar{
-                    top: -120px;
-                }
-            }
-
-            .card{
-                margin-top: 150px;
-            }
-
-        }
-    }
-
-}
-
-
-@media screen and (min-width: 992px) {
-
-    .summary {
-        .separator {
-
-            height: 275px;
-
-            .hello {
-                font-size: 70px;
-            }
-
-        }
-
-        .content{
-
-            .card{
-                margin-top: 200px;
-                margin-bottom: 50px;
-            }
-
-        }
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .summary {
-
-        .separator {
-
-            .hello {
-                font-size: 80px;
-            }
         }
 
     }

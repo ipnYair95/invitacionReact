@@ -1,13 +1,14 @@
-import { Avatar, Box, Button, Typography } from '@mui/material';
+import { Avatar, Box, Typography } from '@mui/material';
 import styles from './Home.module.scss';
-import { IMG } from '../../assets';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
-import { SECTIONS } from '../../constants/contants';
-
+import { SECTIONS } from '../../constants/contants'; 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { TargetDate } from './components';
+import { ButtonHeart } from '../../components';
+import { IMG } from '../../assets';
 
 export const Home = () => {
 
@@ -40,48 +41,29 @@ export const Home = () => {
   };
 
   return (
-    <Box className={styles.home} id={SECTIONS.HOME} sx={{
-      backgroundImage: IMG.BACKGROUND
-    }}  >
+    <Box className={styles.home} data-aos="zoom-in">
 
-      <Box className={styles.content} data-aos="zoom-in">
+      <Box className={styles.container}>       
 
-        <Box className={styles.grid}  >
+        <Typography className={`${styles.title} title-shadow`} > Mis XV AÑOS </Typography>
 
-          <Box className={styles.item} >
+        <Avatar className={styles.photo} src={IMG.LOGO} />
 
-            <Typography className={styles.title}> MIS XV AÑOS </Typography>
+        <Typography className={`${styles.name} title-shadow`} > María Isabel </Typography>
 
-            <hr />
+        <TargetDate />
 
-            <Typography className={styles.date}> 25 de mayo de 2024 </Typography>
-            <Typography className={styles.letter}> En esta nueva etapa, te deseo que cada día brille con alegría y que tu camino esté lleno de sueños cumplidos. Que esta etapa de tu vida sea tan hermosa y especial como tú. ¡Felices quince! </Typography>
+        <Typography className={styles.summary}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum, eius laboriosam consectetur tempore dolorem officia earum officiis hic consequatur accusantium inventore aliquid? Vitae quidem id incidunt, obcaecati esse harum.
+        </Typography>
 
-          </Box>
+        <ButtonHeart />
 
-          <Box className={styles.item} >
-
-            <Box className={styles.img}>
-              <Avatar src={IMG.LOGO} sx={{
-                width: { xs: 150, sm: 200, md: 250, lg: 300 },
-                height: { xs: 150, sm: 200, md: 250, lg: 300 },
-              }} />
-            </Box>
-
-            <Typography className={styles.name}> Miriam Guadalupe </Typography>
-
-          </Box>
-
-        </Box>
-
-        <Button className={styles.button} disableRipple onClick={goTo}>
-          Acompáñame
-        </Button>
-
+        <Typography className={styles.await}> ¡Te esperamos! </Typography>
       </Box>
 
-      <Box className={styles.timer} >
-        <Countdown date={'2024-05-25T00:00:00'} renderer={renderer} />
+      <Box className={styles.footer}>
+        <Countdown date="2025-02-15T17:00:00" renderer={renderer} />
       </Box>
 
     </Box>

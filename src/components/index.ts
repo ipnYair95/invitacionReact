@@ -6,3 +6,4 @@ export * from './modal-map';
 export * from './letter';
 export * from './loader';
 export * from './buttons';
+export * from './custom-slideshow';

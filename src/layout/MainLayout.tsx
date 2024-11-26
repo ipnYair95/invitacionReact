@@ -55,31 +55,19 @@ export const MainLayout = ({ onPlay }: any) => {
   return (
     <Box className={styles.layout}>
 
-      <Stars />
-
-      <Header />
-
       <Home />
-
-      <Summary />
 
       <People />
 
-      <Box className={styles.content}>
+      <SlideShow />
 
-        <SlideShow />
+      <Dedications />
 
-        <Dedications />
+      <Places />
 
-        <Places />
+      <Gifs />
 
-        <Gifs />
-
-        <MoneyCards />
-
-        <Footer />
-
-      </Box>
+      <Footer />
 
     </Box>
   );

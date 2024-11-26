@@ -9,7 +9,7 @@ export const Card = ({ button }: any) => {
     <Box className={styles.card} >
 
       <Typography className={styles.title} >
-        Mis XV Años
+        ¡Gracias!
       </Typography>
 
       <SeparatorHeart />

@@ -15,9 +15,8 @@ export const People = () => {
     <Box className={styles.people} data-aos="fade-up">
 
       <Box className={styles.parentCard}>
-        <Typography className={styles.title} > Mis padres </Typography>
 
-        <Divider />
+        <Divider className={styles.divider}> MIS PADRES </Divider>
 
         <Typography className={styles.parent} > Juan Manuel Correo Marcelino </Typography>
 
@@ -26,9 +25,8 @@ export const People = () => {
       </Box>
 
       <Box className={styles.parentCard}>
-        <Typography className={styles.title} > Mis padrinos </Typography>
 
-        <Divider />
+        <Divider className={styles.divider}> MIS PADRINOS </Divider>
 
         <Typography className={styles.parent} > Bruno Armando Muciño Ramírez </Typography>
 

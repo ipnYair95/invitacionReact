@@ -1,9 +1,9 @@
 import styles from './CardGif.module.scss';
-import { Box, Typography } from '@mui/material';
+import { Avatar, Box, Typography } from '@mui/material';
 import { IGif } from "../../constants/constants"
 import { SeparatorHeart } from '../../../../components';
 
-export const CardGif = ({ ICON, title }: IGif) => {
+export const CardGif = ({ img, title }: IGif) => {
   return (
     <Box className={styles.container} >
 
@@ -14,7 +14,10 @@ export const CardGif = ({ ICON, title }: IGif) => {
         <SeparatorHeart />
 
         <Box className={styles.emote} >
-          <ICON />
+            <Avatar src={img} sx={{
+              width: 100,
+              height: 100
+            }}  />          
         </Box>
 
       </Box>

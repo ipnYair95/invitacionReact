@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(var(--color1_rgb), 0.2);
+    background-color: rgba(var(--secondary), 0.2);
     padding: 16px;
     gap: 8px;
     border-radius: 4px;
@@ -38,7 +38,7 @@
             
             *{
                 font-size: 80px;
-                color: var(--secondary);
+                color: var(--primary);
             }
 
         }

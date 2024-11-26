@@ -21,25 +21,12 @@ export const Summary = () => {
   const button = <Button className={styles.buttonDownload} startIcon={<Download fontSize='large' />} onClick={onDownload} > </Button>
 
   return (
-    <Box className={styles.summary} id={SECTIONS.SUMMARY}  >
-
-      <Box className={styles.separator} data-aos="fade-up">
-
-        <Typography className={styles.hello} > ¡Hola! </Typography>
-
-      </Box>
+    <Box className={styles.summary} id={SECTIONS.SUMMARY}  >      
 
       <Box className={styles.content} data-aos="fade-up">
 
-        <Box className={styles.avatarContainer} >
-          <Avatar className={styles.avatar} src={IMG.PHOTO} sx={{
-            width: { xs: 150, sm: 200, md: 250 },
-            height: { xs: 150, sm: 200, md: 250 },
-          }} />
-        </Box>
-
         <Box className={styles.card} >
-          <Card button={button} />
+          <Card />
         </Box>
 
       </Box>

@@ -5,26 +5,16 @@
 
 :root {
 
-  /* claro */
-  --primary: #ca7e96;
-  --primary_rgb: rgb(202, 126, 150);
+  --primary: #e3482c; /* Color principal, podría usarse para botones principales o acciones destacadas */
 
-  /* oscuro */
-  --secondary: #b0667e;
-  --secondary_rgb: rgb(176, 102, 126);
+  --secondary: #ea7453; /* Color secundario, para botones secundarios o elementos destacados menos prominentes */
 
-  /* oscuro mayor */
-  --color1:#954e66;
-  --color1_rgb: rgb(149, 78, 102);
+  --accent: #f19f7a; /* Color de acento, para resaltar detalles o elementos decorativos */
 
-  /* medio */
-  --color2: #e597ae;
-  --color2_rgb: rgb(229, 151, 174);
+  --warning: #f8caa1; /* Color de advertencia, para notificaciones o mensajes menos críticos */
 
-  /* mas claro */
-  --color3: #ffafc7;
-  --color3_rgb: rgb(255, 175, 199);
-
+  --background-alt: #fff5c8; /* Color alternativo de fondo, para áreas suaves o resaltos ligeros */
+  
 }
 
 body {
@@ -41,7 +31,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
-  background: var(--color3)
+  background: var(--background-alt);
 }
 
 * {
@@ -75,4 +65,20 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #707070;
+}
+
+.title-shadow{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra sutil y neutra */
+}
+
+.secondary-shadow{
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Ligero y legible */
+}
+
+.intense-shadow{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Más intenso para destacar sobre fondos claros */
+}
+
+.light-shadow{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Más intenso para destacar sobre fondos claros */
 }

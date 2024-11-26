@@ -1,0 +1,28 @@
+.targetDate{
+    width: 100%;
+    display: flex;    
+
+    .date{        
+        width: 80px;
+        position: relative;
+
+        .day{
+            position: absolute;
+            font-size: 36px;
+            color: var(--accent);
+            top: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .month{
+            position: absolute;
+            font-size: 16px;
+            color: var(--primary);
+            bottom: -12px;
+            left: 4%;            
+        }
+
+    }
+
+}
