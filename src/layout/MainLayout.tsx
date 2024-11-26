@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, IconButton } from "@mui/material";
-import { Header, Loader, Stars } from "../components";
-import { Home, Summary, SlideShow, Dedications, Places, Gifs, Footer, People, MoneyCards } from "../pages";
+import { Loader } from "../components";
+import { Home, SlideShow, Dedications, Places, Gifs, Footer, People } from "../pages";
 import { useState } from 'react';
 import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';

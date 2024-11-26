@@ -57,7 +57,7 @@ export const Home = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, illum, eius laboriosam consectetur tempore dolorem officia earum officiis hic consequatur accusantium inventore aliquid? Vitae quidem id incidunt, obcaecati esse harum.
         </Typography>
 
-        <ButtonHeart />
+        <ButtonHeart onClick={goTo} />
 
         <Typography className={styles.await}> ¡Te esperamos! </Typography>
       </Box>

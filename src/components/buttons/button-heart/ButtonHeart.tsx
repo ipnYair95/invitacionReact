@@ -4,9 +4,9 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import TouchAppIcon from '@mui/icons-material/TouchApp';
 
 
-export const ButtonHeart = () => {
+export const ButtonHeart = ({ onClick }: any) => {
   return (
-    <Box className={styles.buttonHeart} >
+    <Box className={styles.buttonHeart} onClick={onClick} >
 
       <FavoriteIcon className={styles.heart} />
 
