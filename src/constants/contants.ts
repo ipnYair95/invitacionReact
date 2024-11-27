@@ -4,5 +4,6 @@ export enum SECTIONS {
     GIFS = 'GIFS',    
     PLACES = 'PLACES',
     SLIDES = 'SLIDES',
-    SUMMARY = 'SUMMARY'
+    SUMMARY = 'SUMMARY',
+    PEOPLE = 'PEOPLE'
 }

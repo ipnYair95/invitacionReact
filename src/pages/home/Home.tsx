@@ -20,7 +20,7 @@ export const Home = () => {
 
     e.preventDefault();
 
-    const element: any = document.querySelector(`#${SECTIONS.SUMMARY}`);
+    const element: any = document.querySelector(`#${SECTIONS.PEOPLE}`);
 
     window.scrollTo({
       top: element.offsetTop,

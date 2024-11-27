@@ -1,27 +1,36 @@
 import styles from './MainLayout.module.scss';
-import { Box, IconButton } from "@mui/material";
+import { Box, Fab, IconButton } from "@mui/material";
 import { Loader } from "../components";
-import { Home, SlideShow, Dedications, Places, Gifs, Footer, People } from "../pages";
+import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm } from "../pages";
 import { useState } from 'react';
 import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import MusicOffIcon from '@mui/icons-material/MusicOff';
+import { usePlay } from '../hooks';
+import { useDataStore } from '../store';
 
-export const MainLayout = ({ onPlay }: any) => {
+export const MainLayout = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
   const [isLoading, setIsLoading] = useState(true);
 
+  const { playing, setPlaying } = useDataStore();
+
+  usePlay();
+
   const onClick = () => {
 
     setIsOpen(true);
-    onPlay();
+    setPlaying();
 
     setTimeout(() => {
       setIsLoading(false);
     }, 1000);
 
   }
+
 
   if (!isOpen) {
     return (
@@ -67,7 +76,15 @@ export const MainLayout = ({ onPlay }: any) => {
 
       <Gifs />
 
+      <Confirm/>
+
       <Footer />
+
+      <Fab className={styles.fab} onClick={setPlaying} >
+        {
+          playing ? <MusicNoteIcon /> : <MusicOffIcon />
+        }
+      </Fab>
 
     </Box>
   );

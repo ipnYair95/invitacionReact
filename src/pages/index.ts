@@ -7,3 +7,4 @@ export * from './gifs';
 export * from './footer';
 export * from './people';
 export * from './money-cards';
+export * from './confirm';

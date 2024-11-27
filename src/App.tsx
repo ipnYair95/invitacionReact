@@ -28,15 +28,6 @@ function App() {
 
   const [disabled,] = useState(false);
 
-  const onPlay = () => {
-
-    const audioElement: any = document.getElementById('vid')!;
-    audioElement.volume = 0.5;
-    audioElement.loop = true;
-    audioElement.play();
-
-  }
-
   if (disabled) {
 
     return <Typography> 404 NOT FOUND </Typography>
@@ -51,11 +42,11 @@ function App() {
       <audio id='vid' controls autoPlay={true} className={styles.audio}   >
         <source src={MUSIC.MAIN} type="audio/mpeg" />
       </audio>
-      
+
       <Stars />
 
       <Box className={styles.container} >
-        <MainLayout onPlay={onPlay} />
+        <MainLayout />
       </Box>
 
     </ThemeProvider>
