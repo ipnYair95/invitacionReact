@@ -49,7 +49,7 @@ export const Home = () => {
 
         <Avatar className={styles.photo} src={IMG.LOGO} />
 
-        <Typography className={`${styles.name} title-shadow`} > María Isabel </Typography>
+        <Typography className={`${styles.name} title-shadow`} > Monserrat </Typography>
 
         <TargetDate />
 
@@ -63,7 +63,7 @@ export const Home = () => {
       </Box>
 
       <Box className={styles.footer}>
-        <Countdown date="2025-02-15T17:00:00" renderer={renderer} />
+        <Countdown date="2025-01-25T17:00:00" renderer={renderer} />
       </Box>
 
     </Box>

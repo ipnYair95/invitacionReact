@@ -19,9 +19,9 @@ export const People = () => {
 
         <Divider className={styles.divider}> MIS PADRES </Divider>
 
-        <Typography className={styles.parent} > Olga Maribel Marín Alavez </Typography>
+        <Typography className={styles.parent} > Esther Martínez H. </Typography>
 
-        <Typography className={styles.parent} > Santiago Valenzuela </Typography>
+        <Typography className={styles.parent} > Oscar Ramírez L. </Typography>
 
       </Box>
 
@@ -29,9 +29,9 @@ export const People = () => {
 
         <Divider className={styles.divider}> MIS PADRINOS </Divider>
 
-        <Typography className={styles.parent} > Blanca Estela Marín Alavez </Typography>
+        <Typography className={styles.parent} > ----- </Typography>
 
-        <Typography className={styles.parent} > Teresa Marín Alavez </Typography>
+        <Typography className={styles.parent} > ------ </Typography>
       </Box>
 
 

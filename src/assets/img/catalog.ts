@@ -1,10 +1,7 @@
-import BACKGROUND from './background.webp';
+import BACKGROUND from './background.jpg';
 import LOGO from './logo.jpg';
 import IMG1 from './img1.jpg';
 import IMG2 from './img2.jpg';
-import IMG3 from './img3.jpg'
-import IMG4 from './img4.jpg'
-import IMG5 from './img5.jpg'
 import MISA from './misa.jpg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
@@ -20,9 +17,6 @@ export const IMG = {
     LOGO,        
     IMG1,
     IMG2,
-    IMG3,
-    IMG4,
-    IMG5,
     MISA,
     FIESTA,
     SPECIAL,

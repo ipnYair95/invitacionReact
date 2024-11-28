@@ -5,7 +5,7 @@ import CheckIcon from '@mui/icons-material/Check';
 export const Confirm = () => {
 
   const onClick = () => {
-    window.open('https://forms.gle/iw92JdRjJFZAQF8M6', '_blank');
+    window.open('https://forms.gle/bWq5jREZgUrC1yCh7', '_blank');
   }
 
   return (
