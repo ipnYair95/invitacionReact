@@ -29,9 +29,9 @@ export const People = () => {
 
         <Divider className={styles.divider}> MIS PADRINOS </Divider>
 
-        <Typography className={styles.parent} > ----- </Typography>
+        <Typography className={styles.parent} > Cristina Martínez H. </Typography>
 
-        <Typography className={styles.parent} > ------ </Typography>
+        <Typography className={styles.parent} > Pedro Monroy H. </Typography>
       </Box>
 
 
