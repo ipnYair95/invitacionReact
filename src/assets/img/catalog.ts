@@ -11,10 +11,11 @@ import QR from './qr.jpg';
 import PARTY from './party.png';
 import HANDSOME from './handsome.png';
 import GIF from './gif.png';
+import CROWN from './crown.webp';
 
 export const IMG = {
     BACKGROUND,
-    LOGO,        
+    LOGO,
     IMG1,
     IMG2,
     MISA,
@@ -24,7 +25,8 @@ export const IMG = {
     QR,
     PARTY,
     HANDSOME,
-    GIF    
+    GIF,
+    CROWN
 }
 
 export const ASSETS = {

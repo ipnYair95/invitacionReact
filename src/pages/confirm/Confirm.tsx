@@ -1,15 +1,22 @@
 import { Box, Button, Typography } from '@mui/material';
 import styles from './Confirm.module.scss';
 import CheckIcon from '@mui/icons-material/Check';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const Confirm = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   const onClick = () => {
     window.open('https://forms.gle/bWq5jREZgUrC1yCh7', '_blank');
   }
 
   return (
-    <Box className={styles.confirm}>
+    <Box className={styles.confirm} data-aos="fade-up">
 
       <Typography className={`${styles.title} title-shadow`} > Confirmar Asistencia </Typography>
 
@@ -17,7 +24,7 @@ export const Confirm = () => {
 
       <Typography className={styles.text} > Favor de confirmar tu presencia. </Typography>
 
-      <Button className={styles.button}  onClick={onClick} >
+      <Button className={styles.button} onClick={onClick} >
         <CheckIcon />
       </Button>
 
