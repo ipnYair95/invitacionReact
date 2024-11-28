@@ -1,4 +1,4 @@
-import BACKGROUND from './background.webp';
+import BACKGROUND from './background.jpg';
 import LOGO from './logo.jpg';
 import IMG1 from './img1.jpg';
 import IMG2 from './img2.jpg';

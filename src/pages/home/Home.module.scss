@@ -1,4 +1,5 @@
-.home {    
+.home {
+    position: relative; /* Asegúrate de que el contenedor principal tenga posición relativa */
     height: 100dvh;
     display: flex;
     flex-direction: column;
@@ -6,7 +7,7 @@
     text-align: center;
     justify-content: center;
     gap: 16px;
-    background-image: url('/src/assets/img/background.webp');
+    background-image: url('/src/assets/img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -18,7 +19,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        justify-content: center;
+        justify-content: space-between;
 
         .introduction {
             font-size: 18px;
@@ -54,6 +55,10 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+
+
         }
     }
 
@@ -62,4 +67,15 @@
     }
 
 
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Color de fondo con opacidad */
+    z-index: -1; /* Asegura que el pseudo-elemento esté detrás del contenido */
 }
