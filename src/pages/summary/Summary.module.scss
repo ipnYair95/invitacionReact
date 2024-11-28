@@ -29,11 +29,14 @@
 
         }
 
-        .card {
-            position: relative;
-            width: 80%;
-            justify-content: center;            
-            display: inline-flex;
+        .crown{
+            width: 150px;
+        }
+
+        .text{
+            font-size: 20px;
+            color: var(--secondary);
+            text-align: center;
         }
 
     }
