@@ -19,7 +19,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        justify-content: center;
+        justify-content: space-between;
 
         .introduction {
             font-size: 18px;
@@ -52,18 +52,11 @@
         .photo {
             margin-left: auto;
             margin-right: auto;
-            width: 200px;
-            height: 250px;
+            width: 150px;
+            height: 200px;
             border-radius: 50%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-
-
-
         }
-    }
-
-    .footer {
-        height: 45px;
     }
 
 
