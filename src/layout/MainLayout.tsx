@@ -16,7 +16,9 @@ export const MainLayout = () => {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  const { playing, setPlaying } = useDataStore();
+  const playing = useDataStore((state) => state.playing);
+
+  const { setPlaying } = useDataStore();
 
   usePlay();
 
@@ -76,7 +78,7 @@ export const MainLayout = () => {
 
       <Gifs />
 
-      <Confirm/>
+      <Confirm />
 
       <Footer />
 

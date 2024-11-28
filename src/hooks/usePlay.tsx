@@ -4,7 +4,7 @@ import { useDataStore } from "../store";
 
 export const usePlay = () => {
 
-    const { playing } = useDataStore();
+    const playing = useDataStore((state) => state.playing);
 
     useEffect(() => {
 
