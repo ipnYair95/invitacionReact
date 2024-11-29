@@ -1,14 +1,18 @@
 import styles from './MainLayout.module.scss';
-import { Box, Fab, IconButton } from "@mui/material";
+import { Box, Fab, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader } from "../components";
 import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary } from "../pages";
 import { useState } from 'react';
-import { IMG } from '../assets';
+import { ASSETS, IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
+
+import SettingsIcon from '@mui/icons-material/Settings';
+import DownloadIcon from '@mui/icons-material/Download';
+
 
 export const MainLayout = () => {
 
@@ -21,6 +25,10 @@ export const MainLayout = () => {
   const { setPlaying } = useDataStore();
 
   usePlay();
+
+  const onDownload = () => {
+    window.open(ASSETS.INVITATION, '_blank');
+  }
 
   const onClick = () => {
 
@@ -84,13 +92,19 @@ export const MainLayout = () => {
 
       <Footer />
 
-      <Fab className={styles.fab} onClick={setPlaying} >
-        {
-          playing ? <MusicNoteIcon /> : <MusicOffIcon />
-        }
-      </Fab>
+      <SpeedDial
+        className={styles.speedDial}
+        ariaLabel="SpeedDial basic example"
+        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        icon={<SettingsIcon />}
+      >
+        <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
-    </Box>
+        <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+
+      </SpeedDial>
+
+    </Box >
   );
 
 }
