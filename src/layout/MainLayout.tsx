@@ -1,5 +1,5 @@
 import styles from './MainLayout.module.scss';
-import { Box, Fab, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
+import { Box, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader } from "../components";
 import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary } from "../pages";
 import { useState } from 'react';
