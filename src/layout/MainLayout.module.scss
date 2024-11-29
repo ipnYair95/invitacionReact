@@ -15,13 +15,23 @@
         visibility: hidden;
     }
 
-    .fab{
+    .speedDial{
         position: fixed;
         bottom: 16px;
         right: 16px;
-        background-color: var(--accent);
         color: #fff;
+
+        button{
+            background-color: var(--primary);
+        }
+
+        .speedDialAction{
+            background-color: var(--secondary);
+            color: #fff;
+        }
+
     }
+
 
 }
 

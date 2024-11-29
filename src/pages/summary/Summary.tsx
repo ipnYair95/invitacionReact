@@ -12,12 +12,6 @@ export const Summary = () => {
     AOS.init();
   }, [])
 
-  /*  const onDownload = () => {
-     window.open(ASSETS.INVITATION, '_blank');
-   }
- 
-   const button = <Button className={styles.buttonDownload} startIcon={<Download fontSize='large' />} onClick={onDownload} > </Button> */
-
   return (
     <Box className={styles.summary} id={SECTIONS.SUMMARY}  >
 
