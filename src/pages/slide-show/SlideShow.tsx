@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 
 export const SlideShow = () => {
 
-  const images = [IMG.IMG1, IMG.IMG2];
+  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5];
 
   useEffect(() => {
     AOS.init();
@@ -29,7 +29,7 @@ export const SlideShow = () => {
       <Box className={styles.slideContainer} >
 
         <CustomSlideshow images={images} enableDots />
-        
+
       </Box>
 
     </Box>

@@ -3,7 +3,7 @@ import { Box, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader } from "../components";
 import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary } from "../pages";
 import { useState } from 'react';
-import { ASSETS, IMG } from '../assets';
+import { IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
@@ -11,8 +11,6 @@ import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
 
 import SettingsIcon from '@mui/icons-material/Settings';
-import DownloadIcon from '@mui/icons-material/Download';
-
 
 export const MainLayout = () => {
 
@@ -26,9 +24,9 @@ export const MainLayout = () => {
 
   usePlay();
 
-  const onDownload = () => {
+/*   const onDownload = () => {
     window.open(ASSETS.INVITATION, '_blank');
-  }
+  } */
 
   const onClick = () => {
 
@@ -100,7 +98,7 @@ export const MainLayout = () => {
       >
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
-        <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+        {/* <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} /> */}
 
       </SpeedDial>
 

@@ -60,7 +60,7 @@ export const Home = () => {
       </Box>
 
       <Box>
-        <Countdown date="2025-01-25T17:00:00" renderer={renderer} />
+        <Countdown date="2025-01-25T16:20:00" renderer={renderer} />
       </Box>
 
     </Box>

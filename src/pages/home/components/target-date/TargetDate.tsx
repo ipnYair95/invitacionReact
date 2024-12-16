@@ -15,7 +15,7 @@ export const TargetDate = () => {
         <Typography className={styles.month}> ENERO </Typography>
       </Box>
 
-      <TargetItem label="17:00 HRS" />
+      <TargetItem label="4:20 HRS" />
 
     </Box>
   );

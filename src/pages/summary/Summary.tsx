@@ -20,7 +20,7 @@ export const Summary = () => {
         <img className={styles.crown} src={IMG.CROWN} alt="crown" />
 
         <Typography className={styles.text}>
-          Hoy es mi día, un paso más hacia mis sueños. Soy fuerte, única y capaz de hacer todo lo que me proponga.
+          Con la bendición de Dios, y el amor de mi familia me siento muy feliz de llegar a este momento de mi vida. Los invito a compartir conmigo este día tan especial.
         </Typography>
 
       </Box>
