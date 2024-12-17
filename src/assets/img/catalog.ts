@@ -15,6 +15,7 @@ import PARTY from './party.png';
 import HANDSOME from './handsome.png';
 import GIF from './gif.png';
 import CROWN from './crown.webp';
+import JOKE from './joke.png';
 
 export const IMG = {
     BACKGROUND,
@@ -32,7 +33,8 @@ export const IMG = {
     PARTY,
     HANDSOME,
     GIF,
-    CROWN
+    CROWN,
+    JOKE
 }
 
 export const ASSETS = {
