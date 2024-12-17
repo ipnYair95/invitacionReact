@@ -8,11 +8,11 @@
     text-align: center;
     padding: 16px;
 
-    background-color: var(--warning);
+    background-color: var(--background-alt);
 
     .title{
         font-size: 38px;
-        color: var(--primary);
+        color: var(--secondary);
     }
 
     .text{
@@ -25,7 +25,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: var(--accent);
+        background-color: var(--secondary);
         color: #fff;
         font-size: 20px;
         padding: 8px 16px;
