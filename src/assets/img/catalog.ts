@@ -1,10 +1,13 @@
 import BACKGROUND from './background.jpg';
 import LOGO from './logo.jpg';
-import IMG1 from './img1.jpg';
-import IMG2 from './img2.jpg';
-import IMG3 from './img3.jpg'
-import IMG4 from './img4.jpg'
-import IMG5 from './img5.jpg'
+import IMG1 from './img1.jpeg';
+import IMG2 from './img2.jpeg';
+import IMG3 from './img3.jpeg';
+import IMG4 from './img4.jpeg';
+import IMG5 from './img5.jpeg';
+import IMG6 from './img6.jpeg';
+import IMG7 from './img7.jpeg';
+import IMG8 from './img8.jpeg';
 import MISA from './misa.jpg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
@@ -24,6 +27,9 @@ export const IMG = {
     IMG3,
     IMG4,
     IMG5,
+    IMG6,
+    IMG7,
+    IMG8,
     MISA,
     FIESTA,
     SPECIAL,
