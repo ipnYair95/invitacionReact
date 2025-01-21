@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader } from "../components";
-import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary } from "../pages";
+import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary, Ticket } from "../pages";
 import { useState } from 'react';
 import { ASSETS, IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
@@ -76,6 +76,8 @@ export const MainLayout = () => {
     <Box className={styles.layout}>
 
       <Home />
+
+      <Ticket />
 
       <Summary />
 

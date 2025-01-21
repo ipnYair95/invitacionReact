@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { IMG } from '../../assets';
 import styles from './SlideShow.module.scss';
 import { CustomSlideshow, SeparatorHearTitle } from '../../components';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 
 import AOS from 'aos';
 import 'swiper/css';

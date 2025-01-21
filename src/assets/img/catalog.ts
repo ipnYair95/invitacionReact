@@ -19,6 +19,7 @@ import HANDSOME from './handsome.png';
 import GIF from './gif.png';
 import CROWN from './crown.webp';
 import QR_MEMORIES from './dots-memories.jpeg';
+import PARTY_SVG from './party.svg';
 
 export const IMG = {
     BACKGROUND,
@@ -40,7 +41,8 @@ export const IMG = {
     HANDSOME,
     GIF,
     CROWN,
-    QR_MEMORIES
+    QR_MEMORIES,
+    PARTY_SVG
 }
 
 export const ASSETS = {

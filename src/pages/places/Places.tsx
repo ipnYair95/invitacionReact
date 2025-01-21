@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { PLACES } from './constants';
 import { PlaceItem } from './components';
 import { SeparatorHearTitle } from '../../components';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 import { nanoid } from 'nanoid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

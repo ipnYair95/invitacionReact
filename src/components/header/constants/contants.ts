@@ -1,4 +1,4 @@
-import { SECTIONS } from "../../../constants/contants";
+import { SECTIONS } from "../../../constants";
 
 export interface INavItem{
     title: string;

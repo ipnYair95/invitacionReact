@@ -4,7 +4,7 @@ import { DEDICATIONS } from './constants/constants';
 import { CardDedication } from './components/card-dedication/CardDedication';
 import { nanoid } from 'nanoid';
 import { useState, useEffect } from 'react';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

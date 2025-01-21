@@ -5,7 +5,7 @@ import { navItems } from "./constants";
 import { Menu } from "./components";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useScrolling } from '../../hooks/useScrolling';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 import { nanoid } from 'nanoid';
 
 

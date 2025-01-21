@@ -4,7 +4,7 @@ import { Box } from "@mui/material"
 import { GIFS } from './constants';
 import { CardGif } from './components';
 import { nanoid } from 'nanoid';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
