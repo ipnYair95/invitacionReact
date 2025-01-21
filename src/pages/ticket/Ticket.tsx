@@ -7,6 +7,7 @@ import { HeaderTicket, TextItem } from "./components";
 import { IMG } from "../../assets";
 import { useTicket } from "./hooks";
 import { NotFound } from "../../components";
+import { SECTIONS } from "../../constants";
 
 export const Ticket = () => {
 
@@ -22,7 +23,7 @@ export const Ticket = () => {
 
     if (!ticket) {
         return (
-            <Box className={styles.ticket} data-aos="fade-up" >
+            <Box className={styles.ticket} data-aos="fade-up" id={SECTIONS.TICKET} >
 
                 <NotFound msg="No hemos encontrado la información de tu boleto" />
 
@@ -31,7 +32,7 @@ export const Ticket = () => {
     }
 
     return (
-        <Box className={styles.ticket} data-aos="fade-up" >
+        <Box className={styles.ticket} data-aos="fade-up" id={SECTIONS.TICKET}>
 
             <Box className={styles.contentTicket}>
 

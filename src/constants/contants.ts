@@ -5,7 +5,8 @@ export enum SECTIONS {
     PLACES = 'PLACES',
     SLIDES = 'SLIDES',
     SUMMARY = 'SUMMARY',
-    PEOPLE = 'PEOPLE'
+    PEOPLE = 'PEOPLE',
+    TICKET = 'TICKET'
 }
 
 export interface IDataBase {
