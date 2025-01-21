@@ -12,6 +12,7 @@ import { useDataStore } from '../store';
 
 import SettingsIcon from '@mui/icons-material/Settings';
 import DownloadIcon from '@mui/icons-material/Download';
+import { DotsMemories } from '../pages/dots-memories/DotsMemories';
 
 
 export const MainLayout = () => {
@@ -89,6 +90,8 @@ export const MainLayout = () => {
       <Gifs />
 
       <Confirm />
+
+      <DotsMemories />
 
       <Footer />
 
