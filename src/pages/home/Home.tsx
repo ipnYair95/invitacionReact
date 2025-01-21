@@ -45,7 +45,7 @@ export const Home = () => {
 
       <Box className={styles.container}>
 
-        <Typography className={`${styles.title} title-shadow`} > Mis XV AÑOS </Typography>
+        <Typography className={`${styles.title} title-shadow`} > Mis XV Años </Typography>
 
         <Avatar className={styles.photo} src={IMG.LOGO} />
 

@@ -105,7 +105,9 @@ export const MainLayout = () => {
       >
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
-        <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+        {
+          false &&<SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+        }
 
       </SpeedDial>
 

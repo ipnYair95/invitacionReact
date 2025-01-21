@@ -56,7 +56,7 @@ export const useTicket = () => {
             name: data.name,
             data: [
                 { label: "Personas", value: data.quantity },
-                { label: "Fecha", value: '15/02/2023' }
+                { label: "Fecha", value: '15/02/2025' }
             ]
         }
 

@@ -1,7 +1,5 @@
 import { Box, Typography } from '@mui/material';
 import styles from './Footer.module.scss';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
