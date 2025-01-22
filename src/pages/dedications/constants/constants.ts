@@ -6,10 +6,10 @@ export interface IDedication{
 export const DEDICATIONS: IDedication[] = [
     {
         to: 'Mamá',
-        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, possimus fuga asperiores, omnis natus laborum dolore eum recusandae harum consequuntur quo corporis impedit repudiandae maxime consectetur. Blanditiis, optio fugiat!`
+        text: `Gracias porque me diste la vida, por estar siempre a mi lado y por tu paciencia infinita, te quiero.`
     },
     {
         to: 'Papá',
-        text: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe cum, possimus fuga asperiores, omnis natus laborum dolore eum recusandae harum consequuntur quo corporis impedit repudiandae maxime consectetur. Blanditiis, optio fugiat!`
+        text: `Gracias por darme tu cariño , por estar siempre conmigo, tu apoyo y amor incondicional, te quiero.`
     }
 ];

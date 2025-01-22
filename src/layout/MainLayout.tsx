@@ -9,10 +9,8 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
-
 import SettingsIcon from '@mui/icons-material/Settings';
 import DownloadIcon from '@mui/icons-material/Download';
-import { DotsMemories } from '../pages/dots-memories/DotsMemories';
 
 
 export const MainLayout = () => {
@@ -91,9 +89,7 @@ export const MainLayout = () => {
 
       <Gifs />
 
-      <Confirm />
-
-      <DotsMemories />
+      <Confirm />      
 
       <Footer />
 
