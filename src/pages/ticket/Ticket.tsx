@@ -38,6 +38,8 @@ export const Ticket = () => {
 
                 <HeaderTicket />
 
+                <Typography className={`${styles.title} text-shadow`}> Cordial invitación para </Typography>
+
                 <Typography className={`${styles.name} text-shadow`}> {ticket.name} </Typography>
 
                 <Box className={styles.svgContainer} >

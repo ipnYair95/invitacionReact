@@ -19,7 +19,7 @@ export const People = () => {
 
         <Divider className={styles.divider}> MIS PADRES </Divider>
 
-        <Typography className={styles.parent} > Olga Maribel Marín Alavez </Typography>
+        <Typography className={styles.parent} > Maribel Marín </Typography>
 
         <Typography className={styles.parent} > Santiago Valenzuela </Typography>
 
