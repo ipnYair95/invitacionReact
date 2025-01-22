@@ -18,26 +18,26 @@
         position: relative;
         border-radius: 15px 15px 0px 0px;
 
-        .title{
+        .title {
             width: 100%;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: "Work Sans", serif;
             text-align: center;
-            font-weight: 500;
-            font-size: 24px;
+            font-weight: 400;
+            font-size: 18px;
         }
 
-        .name{
+        .name {
             width: 100%;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-family: "Work Sans", serif;
             text-align: center;
-            font-weight: 500;
-            font-size: 32px;
+            font-weight: 600;
+            font-size: 28px;
             text-decoration: underline;
         }
 
-        .textContainer{
+        .textContainer {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);            
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
         }
 
@@ -54,7 +54,7 @@
         }
 
         .circleOne {
-            position: absolute;            
+            position: absolute;
             bottom: -15px;
             left: -15px;
             width: 30px;
