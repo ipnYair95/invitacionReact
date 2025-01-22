@@ -6,10 +6,10 @@ export interface IDedication{
 export const DEDICATIONS: IDedication[] = [
     {
         to: 'Mamá',
-        text: `Gracias porque me diste la vida, por estar siempre a mi lado y por tu paciencia infinita, te quiero.`
+        text: `Quiero agradecerte que estés en mi vida cada momento. Sé que puedo contar contigo en momentos difíciles y de angustia, sé que contigo puedo compartir mis alegrías, y sé que nuestra amistad se sustenta en mutuo amor. Que seas mi Mamá y mi Amiga es el más preciado tesoro, que agradeceré a Dios eternamente. ¡Te amo mamá!`
     },
     {
         to: 'Papá',
-        text: `Gracias por darme tu cariño , por estar siempre conmigo, tu apoyo y amor incondicional, te quiero.`
+        text: `En este día tan especial para mi, quiero expresar mi profundo agradecimiento por tu presencia constante en mi vida. Tu amor y apoyo incondicional son fundamentales en mi crecimiento y desarrollo. Cada momento a tu lado es una lección de amor, dedicación y fortaleza.`
     }
 ];
