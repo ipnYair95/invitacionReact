@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 24px;
-    background-color: var(--background-alt);
+    background-color: #e6e6e6;
 
     .contentTicket {
         width: 100%;
@@ -24,6 +24,7 @@
             text-align: center;
             font-weight: 400;
             font-size: 18px;
+            color: var(--primary);
         }
 
         .name {
@@ -33,6 +34,7 @@
             font-weight: 600;
             font-size: 28px;
             text-decoration: underline;
+            color: var(--primary);
         }
 
         .textContainer {
@@ -60,7 +62,7 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: var(--background-alt);
+            background-color: #e6e6e6;
         }
 
         .circleTwo {
@@ -70,7 +72,7 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: var(--background-alt);
+            background-color: #e6e6e6;
         }
     }
 
