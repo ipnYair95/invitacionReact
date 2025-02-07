@@ -94,5 +94,7 @@ export const DATABASE: IDataBase[] = [
   { "id": 76, "name": "Eduardo", "quantity": 2 },
   { "id": 77, "name": "Alejandra", "quantity": 2 },
   { "id": 78, "name": "Marlene", "quantity": 4 },
-  { "id": 79, "name": "Abel Zapien", "quantity": 1 }
+  { "id": 79, "name": "Abel Zapien", "quantity": 1 },
+  { "id": 80, "name": "Mayra Mendez", "quantity": 2 },
+  { "id": 81, "name": "Josue Calderón", "quantity": 2 }
 ]
