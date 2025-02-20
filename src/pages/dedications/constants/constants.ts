@@ -5,11 +5,11 @@ export interface IDedication{
 
 export const DEDICATIONS: IDedication[] = [
     {
-        to: 'Papá y mamá',
-        text: `Papá y mamá se que no hay suficientes palabras para agradecerles. Hace XV años llegué a sus vidas, entre lágrimas y sacrificios lograron que siguiera en sus brazos, agradezco a Dios por tenerlos como padres y por demostrarme tanto cariño, amor, y felicidad en mi vida, gracias por cumplir mi sueño`
+        to: 'Mamá',
+        text: `Quiero agradecerte que estés en mi vida cada momento. Sé que puedo contar contigo en momentos difíciles y de angustia, sé que contigo puedo compartir mis alegrías, y sé que nuestra amistad se sustenta en mutuo amor. Que seas mi Mamá y mi Amiga es el más preciado tesoro, que agradeceré a Dios eternamente. ¡Te amo mamá!`
     },
     {
-        to: 'Padrinos',
-        text: `Hoy quiero dar las gracias por aparecer en mi camino. Recuerdo que cuando estaba mal de salud, Dios iluminó a mis papás para que ustedes fueran mis Padrinos y agradezco de corazón que estén conmigo. Gracias por compartir un pedacito de su vida conmigo, gracias por aceptarme de nuevo`
+        to: 'Papá',
+        text: `En este día tan especial para mi, quiero expresar mi profundo agradecimiento por tu presencia constante en mi vida. Tu amor y apoyo incondicional son fundamentales en mi crecimiento y desarrollo. Cada momento a tu lado es una lección de amor, dedicación y fortaleza.`
     }
 ];

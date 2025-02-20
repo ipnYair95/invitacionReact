@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import { IMG } from '../../assets';
 import styles from './SlideShow.module.scss';
 import { CustomSlideshow, SeparatorHearTitle } from '../../components';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 
 import AOS from 'aos';
 import 'swiper/css';
@@ -15,7 +15,7 @@ import { useEffect } from 'react';
 
 export const SlideShow = () => {
 
-  const images = [IMG.IMG2, IMG.IMG1, IMG.IMG3, IMG.IMG4, IMG.IMG5];
+  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5, IMG.IMG6, IMG.IMG7, IMG.IMG8];
 
   useEffect(() => {
     AOS.init();

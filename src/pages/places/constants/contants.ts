@@ -11,18 +11,18 @@ export interface IPlace {
 export const PLACES: IPlace[] = [
     {
         reason: 'MISA',
-        time: '4:20 p.m.',
-        placeName: 'Parroquia de San Francisco de Asís',
-        address: 'C. Clara Córdoba Manzana 023, Cerro del Tejolote, 56567 Ixtapaluca, Méx.',
-        url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.2839363278061!2d-98.91500584822482!3d19.319915019861966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1e71fab4f317%3A0xdf06a232d002b753!2sParroquia%20de%20San%20Francisco%20de%20As%C3%ADs!5e0!3m2!1ses-419!2smx!4v1732763522582!5m2!1ses-419!2smx',
+        time: '6:00 p.m.',
+        placeName: 'Parroquia de San Juan Bautista de Tlalpizahuac',
+        address: 'San Antonio Manzana 029, San Juan Tlalpizahuac, 56530 Ixtapaluca, Méx.',
+        url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.894819524277!2d-98.9475590104294!3d19.330369889073438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1d94a697f277%3A0x6cc1381e1a72afd2!2sParroquia%20de%20San%20Juan%20Bautista%20de%20Tlalpizahuac!5e0!3m2!1ses-419!2smx!4v1737436299415!5m2!1ses-419!2smx',
         img: IMG.MISA
     },
     {
-        reason: 'FIESTA',
-        time: '5:20 p.m.',
-        placeName: 'Salon DAFA',
-        address: 'C. Marisol Manzana 001, 56565 Ixtapaluca, Méx.',
-        url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.845673364371!2d-98.92176425485397!3d19.332501897429427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1e0e9ccd3515%3A0x22b0267851d5035e!2sC.%20Marisol%20Manzana%20001%2C%2056565%20Ixtapaluca%2C%20M%C3%A9x.!5e0!3m2!1ses-419!2smx!4v1732763693395!5m2!1ses-419!2smx',
+        reason: 'Fiesta',
+        time: '7:00 p.m.',
+        placeName: 'Salón Emperador',
+        address: 'Colonia Santa Cruz Tlalpizahuac Calle Chinameca, Manzana 5 Lote 7, 56560 Ixtapaluca, Méx.',
+        url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.4944033854326!2d-98.94827017545944!3d19.319481122380942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1feef22d4611%3A0xd3906bf7bf5c1604!2sSALON%20DE%20EVENTOS%20EL%20EMPERADOR!5e0!3m2!1ses-419!2smx!4v1713492420720!5m2!1ses-419!2smx',
         img: IMG.FIESTA
     }
 ];

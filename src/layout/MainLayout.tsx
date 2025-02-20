@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader } from "../components";
-import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary } from "../pages";
+import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary, Ticket } from "../pages";
 import { useState } from 'react';
 import { ASSETS, IMG } from '../assets';
 import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
@@ -9,7 +9,6 @@ import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
-
 import SettingsIcon from '@mui/icons-material/Settings';
 import DownloadIcon from '@mui/icons-material/Download';
 
@@ -75,6 +74,8 @@ export const MainLayout = () => {
 
       <Home />
 
+      <Ticket />
+
       <Summary />
 
       <People />
@@ -87,7 +88,7 @@ export const MainLayout = () => {
 
       <Gifs />
 
-      <Confirm />
+      <Confirm />      
 
       <Footer />
 
@@ -99,7 +100,9 @@ export const MainLayout = () => {
       >
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
-        <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+        {
+          false &&<SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+        }
 
       </SpeedDial>
 

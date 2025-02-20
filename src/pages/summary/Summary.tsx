@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import styles from './Summary.module.scss';
-import { SECTIONS } from '../../constants/contants';
+import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';

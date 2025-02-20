@@ -6,8 +6,7 @@ export interface IGif {
 }
 
 export const GIFS: IGif[] = [
-    { title: "Venir guapo", img: IMG.HANDSOME },
-    { title: "Con ganas de bailar", img: IMG.PARTY },
-    { title: "Mi regalo uwu", img: IMG.GIF },
-    { title: "No se llevan borrachos a domicilio", img: IMG.JOKE },
+    { title: "Venir guap@", img: IMG.HANDSOME },
+    { title: "Con ganas de bailar y divertirse", img: IMG.PARTY },
+    { title: "Mi regalo uwu", img: IMG.GIF }    
 ];

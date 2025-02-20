@@ -2,7 +2,7 @@ import { Avatar, Box, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
-import { SECTIONS } from '../../constants/contants'; 
+import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -20,7 +20,7 @@ export const Home = () => {
 
     e.preventDefault();
 
-    const element: any = document.querySelector(`#${SECTIONS.PEOPLE}`);
+    const element: any = document.querySelector(`#${SECTIONS.TICKET}`);
 
     window.scrollTo({
       top: element.offsetTop,
@@ -43,9 +43,9 @@ export const Home = () => {
   return (
     <Box className={styles.home} data-aos="zoom-in">
 
-      <Box className={styles.container}>       
+      <Box className={styles.container}>
 
-        <Typography className={`${styles.title} title-shadow`} > Mis XV AÑOS </Typography>
+        <Typography className={`${styles.title} title-shadow`} > Mis XV Años </Typography>
 
         <Avatar className={styles.photo} src={IMG.LOGO} />
 
