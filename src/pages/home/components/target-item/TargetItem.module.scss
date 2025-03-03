@@ -5,7 +5,9 @@
     gap: 8px;
 
     .divider {    
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Sombra suave y ligera */
+        height: 1px;
+        background-color: var(--primary);
+        box-shadow: 0 2px 6px rgba(255, 255, 255, 0.3); /* Sombra suave y ligera */
     }
 
     .label {

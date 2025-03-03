@@ -6,7 +6,7 @@ import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-import { TargetDate } from './components';
+import { TargetDate, VideoBackground } from './components';
 import { ButtonHeart } from '../../components';
 import { IMG } from '../../assets';
 
@@ -41,28 +41,30 @@ export const Home = () => {
   };
 
   return (
-    <Box className={styles.home} data-aos="zoom-in">
+    <Box className={styles.home} data-aos="zoom-in">      
+
+      <VideoBackground />
 
       <Box className={styles.container}>
 
-        <Typography className={`${styles.title} title-shadow`} > Mis XV Años </Typography>
+        <Typography className={`${styles.title} title-shadow`} > Nuestra boda </Typography>        
 
-        <Avatar className={styles.photo} src={IMG.LOGO} />
+        <Typography className={`${styles.name} title-shadow`} > Yair </Typography>
 
-        <Typography className={`${styles.name} title-shadow`} > Monserrat </Typography>
+        <Typography className={`${styles.name} title-shadow`} >  & </Typography>
 
-        <TargetDate />
+        <Typography className={`${styles.name} title-shadow`} > Yazmín </Typography>
 
-        <Typography className={styles.await}> ¡Te esperamos! </Typography>
-
-        <ButtonHeart onClick={goTo} />
+        <TargetDate />        
+        
+        <Typography className={`${styles.text}`} > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur commodi excepturi voluptatibus deleniti sit cum vero eum ipsum. Perferendis dolorum deleniti ut asperiores sed recusandae! Temporibus dicta quae repudiandae deserunt? </Typography>
         
       </Box>
 
       <Box>
-        <Countdown date="2025-01-25T16:20:00" renderer={renderer} />
+        <Countdown date="2025-05-31T15:00:00" renderer={renderer} />
       </Box>
-
+      
     </Box>
   )
 }

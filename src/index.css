@@ -6,15 +6,15 @@
 
 :root {
 
-  --primary: #BFA450; /* Color principal, podría usarse para botones principales o acciones destacadas */
+  --primary: #4223d6; /* Color principal, podría usarse para botones principales o acciones destacadas */
 
-  --secondary: #BF9D5E; /* Color secundario, para botones secundarios o elementos destacados menos prominentes */
+  --secondary: #724fe0; /* Color secundario, para botones secundarios o elementos destacados menos prominentes */
 
-  --accent: #F2DCB3; /* Color de acento, para resaltar detalles o elementos decorativos */
+  --accent: #a17bea; /* Color de acento, para resaltar detalles o elementos decorativos */
 
-  --warning: #A69C0F; /* Color de advertencia, para notificaciones o mensajes menos críticos */
+  --warning: #d0a8f5; /* Color de advertencia, para notificaciones o mensajes menos críticos */
 
-  --background-alt: #F0F0F2; /* Color alternativo de fondo, para áreas suaves o resaltos ligeros */
+  --background-alt: #ffd4ff; /* Color alternativo de fondo, para áreas suaves o resaltos ligeros */
   
 }
 

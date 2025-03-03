@@ -1,6 +1,8 @@
 .targetDate{
     width: 100%;
-    display: flex;    
+    flex: 1;
+    display: flex;        
+    align-items: center;
 
     .date{        
         width: 80px;
@@ -10,7 +12,7 @@
             position: absolute;
             font-size: 36px;
             color: var(--primary);
-            top: 10px;
+            top: -18px;
             left: 50%;
             transform: translate(-50%, -50%);
         }
@@ -19,8 +21,8 @@
             position: absolute;
             font-size: 16px;
             color: var(--primary);
-            bottom: -12px;
-            left: 18%;            
+            bottom: -32px;
+            left: 24%;            
         }
 
     }

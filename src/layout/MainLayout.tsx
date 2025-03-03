@@ -82,11 +82,7 @@ export const MainLayout = () => {
 
       <SlideShow />
 
-      <Dedications />
-
       <Places />
-
-      <Gifs />
 
       <Confirm />      
 
