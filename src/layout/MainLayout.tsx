@@ -8,7 +8,6 @@ import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
 import SettingsIcon from '@mui/icons-material/Settings';
-import DownloadIcon from '@mui/icons-material/Download';
 
 export const MainLayout = () => {
 
