@@ -1,9 +1,8 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader, Open } from "../components";
-import { Home, Places, Footer, Confirm, Ticket, CardPresentation } from "../pages";
+import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow } from "../pages";
 import { useState } from 'react';
-import { ASSETS } from '../assets';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
@@ -22,10 +21,6 @@ export const MainLayout = () => {
   const { setPlaying } = useDataStore();
 
   usePlay();
-
-  const onDownload = () => {
-    window.open(ASSETS.INVITATION, '_blank');
-  }
 
   const onClick = () => {
 
@@ -64,7 +59,9 @@ export const MainLayout = () => {
 
       <CardPresentation />
 
-      <Places />
+      <SlideShow />
+
+      <Places />      
 
       <Confirm />
 
@@ -77,10 +74,6 @@ export const MainLayout = () => {
         icon={<SettingsIcon />}
       >
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
-
-        {
-          false && <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
-        }
 
       </SpeedDial>
 
