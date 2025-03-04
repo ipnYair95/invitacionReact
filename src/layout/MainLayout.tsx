@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader, Open } from "../components";
-import { Home, SlideShow, Places, Footer, Confirm, Ticket, CardPresentation } from "../pages";
+import { Home, Places, Footer, Confirm, Ticket, CardPresentation } from "../pages";
 import { useState } from 'react';
 import { ASSETS } from '../assets';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
