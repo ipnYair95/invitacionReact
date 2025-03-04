@@ -18,6 +18,7 @@ import GIF from './gif.png';
 import CROWN from './crown.webp';
 import BUDUS from './bubu.jpg';
 import LETTER from './letter.jpg';  
+import PARTY_SVG from './party.svg';
 
 export const IMG = {
     BACKGROUND,
@@ -38,7 +39,8 @@ export const IMG = {
     GIF,
     CROWN,
     BUDUS,
-    LETTER
+    LETTER,
+    PARTY_SVG
 }
 
 export const ASSETS = {
