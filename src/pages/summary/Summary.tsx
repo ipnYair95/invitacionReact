@@ -17,7 +17,7 @@ export const Summary = () => {
 
       <Box className={styles.content} data-aos="fade-up">
 
-        <img className={styles.crown} src={IMG.CROWN} alt="crown" />
+        <img className={styles.crown} src={IMG.BUDUS} alt="crown" />
 
         <Typography className={styles.text}>
           Con la bendición de Dios, y el amor de mi familia me siento muy feliz de llegar a este momento de mi vida. Los invito a compartir conmigo este día tan especial.

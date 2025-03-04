@@ -12,13 +12,13 @@ export const Confirm = () => {
   }, [])
 
   const onClick = () => {
-    window.open('https://forms.gle/bWq5jREZgUrC1yCh7', '_blank');
+    window.open('https://forms.gle/LJoi6RHewDthbfLN7', '_blank');
   }
 
   return (
     <Box className={styles.confirm} data-aos="fade-up">
 
-      <Typography className={`${styles.title} title-shadow`} > Confirmar Asistencia </Typography>
+      <Typography className={`${styles.title}`} > Confirmar Asistencia </Typography>
 
       <Typography className={styles.text} > Espero que puedas venir a compartir conmigo este día inolvidable. </Typography>
 

@@ -9,11 +9,11 @@ export const TargetItem = ({ label }: Props) => {
     return (
         <Box className={styles.targetItem}>
 
-            <Divider className={styles.divider} />
+            <Divider className={`${styles.divider} title-shadow`} />
 
-            <Typography className={styles.label} > {label} </Typography>
+            <Typography className={`${styles.label} title-shadow`} > {label} </Typography>
 
-            <Divider className={styles.divider} />
+            <Divider className={`${styles.divider} title-shadow`} />
 
         </Box>
     )

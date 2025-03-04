@@ -6,23 +6,23 @@ export const CountdownCustom = ({ days, hours, minutes, seconds }: any) => {
         <Box className={styles.countdown} >
 
             <Box className={styles.item}>
-                <Typography> {days} </Typography>
-                <Typography> Días  </Typography>
+                <Typography className={`title-shadow`} > {days} </Typography>
+                <Typography className={`title-shadow`} > Días  </Typography>
             </Box>
 
             <Box className={styles.item}>
-                <Typography> {hours} </Typography>
-                <Typography> Horas  </Typography>
+                <Typography className={`title-shadow`} > {hours} </Typography>
+                <Typography className={`title-shadow`} > Horas  </Typography>
             </Box>
 
             <Box className={styles.item}>
-                <Typography> {minutes} </Typography>
-                <Typography> Minutos  </Typography>
+                <Typography className={`title-shadow`} > {minutes} </Typography>
+                <Typography className={`title-shadow`} > Minutos  </Typography>
             </Box>
 
             <Box className={styles.item}>
-                <Typography> {seconds} </Typography>
-                <Typography> Segundos  </Typography>
+                <Typography className={`title-shadow`} > {seconds} </Typography>
+                <Typography className={`title-shadow`} > Segundos  </Typography>
             </Box>
 
         </Box>

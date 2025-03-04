@@ -11,15 +11,13 @@ import IMG8 from './img8.jpeg';
 import MISA from './misa.jpg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
-import OPEN from './open.svg';
 import INVITATION from './invitacion.pdf';
-import QR from './qr.jpg';
 import PARTY from './party.png';
 import HANDSOME from './handsome.png';
 import GIF from './gif.png';
 import CROWN from './crown.webp';
-import QR_MEMORIES from './dots-memories.jpeg';
-import PARTY_SVG from './party.svg';
+import BUDUS from './bubu.jpg';
+import LETTER from './letter.jpg';  
 
 export const IMG = {
     BACKGROUND,
@@ -35,14 +33,12 @@ export const IMG = {
     MISA,
     FIESTA,
     SPECIAL,
-    OPEN,
-    QR,
     PARTY,
     HANDSOME,
     GIF,
     CROWN,
-    QR_MEMORIES,
-    PARTY_SVG
+    BUDUS,
+    LETTER
 }
 
 export const ASSETS = {

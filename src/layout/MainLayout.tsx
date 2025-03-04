@@ -1,10 +1,9 @@
 import styles from './MainLayout.module.scss';
-import { Box, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
-import { Loader } from "../components";
-import { Home, SlideShow, Dedications, Places, Gifs, Footer, People, Confirm, Summary, Ticket } from "../pages";
+import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
+import { Loader, Open } from "../components";
+import { Home, SlideShow, Places, Footer, Confirm, Ticket, CardPresentation } from "../pages";
 import { useState } from 'react';
-import { ASSETS, IMG } from '../assets';
-import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
+import { ASSETS } from '../assets';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
@@ -41,20 +40,7 @@ export const MainLayout = () => {
 
 
   if (!isOpen) {
-    return (
-      <Box className={styles.open} >
-
-        <Box className={styles.img} onClick={onClick} >
-          <img src={IMG.OPEN} />
-
-          <IconButton className={styles.hand} >
-            <PanToolAltOutlinedIcon />
-          </IconButton>
-
-        </Box>
-
-      </Box>
-    );
+    return <Open onClick={onClick} />
   }
 
   if (isLoading) {
@@ -76,15 +62,11 @@ export const MainLayout = () => {
 
       <Ticket />
 
-      <Summary />
-
-      <People />
-
-      <SlideShow />
+      <CardPresentation />
 
       <Places />
 
-      <Confirm />      
+      <Confirm />
 
       <Footer />
 
@@ -97,7 +79,7 @@ export const MainLayout = () => {
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
         {
-          false &&<SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+          false && <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
         }
 
       </SpeedDial>

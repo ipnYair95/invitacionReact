@@ -69,7 +69,7 @@ body {
 }
 
 .title-shadow{
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra sutil y neutra */
+  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra sutil y neutra */
 }
 
 .secondary-shadow{

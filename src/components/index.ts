@@ -8,3 +8,4 @@ export * from './loader';
 export * from './buttons';
 export * from './custom-slideshow';
 export * from './not-found';
+export * from './open';
