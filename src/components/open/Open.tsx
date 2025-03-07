@@ -10,9 +10,9 @@ interface Props {
 export const Open = ({ onClick }: Props) => {
 
     return (
-        <Box className={styles.open} onClick={onClick} >
+        <Box className={styles.open}>
 
-            <Box className={styles.avatar} >
+            <Box className={styles.avatar} onClick={onClick} >
 
                 <img className={styles.img} src={IMG.LETTER} alt="letter" />
 
