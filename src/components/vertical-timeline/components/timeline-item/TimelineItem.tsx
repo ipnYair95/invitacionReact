@@ -1,6 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import styles from './Timelineitem.module.scss';
 import { IItineraryItem } from '../../../../pages/Itinerary/constants';
+import FavoriteIcon from '@mui/icons-material/Favorite';
 
 interface Props {
     item: IItineraryItem;
@@ -23,7 +24,7 @@ export const TimelineItem = ({ item, isEven }: Props) => {
                 <Box className={styles.gridItem} sx={{
                     order: 2
                 }}>
-                    <Box className={styles.separator} />
+                    <FavoriteIcon className={styles.icon} />
                 </Box>
 
                 <Box className={styles.gridItem} sx={{
