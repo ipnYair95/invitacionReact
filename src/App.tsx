@@ -3,6 +3,8 @@ import styles from './App.module.scss';
 import { MainLayout } from './layout'
 import { Box, CssBaseline, ThemeProvider, Typography, createTheme, useTheme } from '@mui/material';
 import { MUSIC } from './assets/music';
+import { Stars } from './components';
+import { useDataStore } from './store';
 
 const breakpointOverrides = {
   xs: 0,
@@ -23,6 +25,8 @@ const getCustomTheme = (theme: any) => createTheme({
 
 function App() {
 
+  const enableStars = useDataStore((state) => state.enableStars);
+
   const theme = useTheme();
 
   const [disabled,] = useState(false);
@@ -35,6 +39,10 @@ function App() {
 
   return (
     <ThemeProvider theme={getCustomTheme(theme)}>
+
+      {
+        enableStars && <Stars />
+      }
 
       <CssBaseline />
 

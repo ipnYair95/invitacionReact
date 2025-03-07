@@ -1,6 +1,6 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
-import { Loader, Open, Stars } from "../components";
+import { Loader, Open } from "../components";
 import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow, Itinerary } from "../pages";
 import { useState } from 'react';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
@@ -17,7 +17,7 @@ export const MainLayout = () => {
 
   const playing = useDataStore((state) => state.playing);
 
-  const { setPlaying } = useDataStore();
+  const { setPlaying, setEnableStars } = useDataStore();
 
   usePlay();
 
@@ -25,10 +25,11 @@ export const MainLayout = () => {
 
     setIsOpen(true);
     setPlaying();
-
+    
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+      setEnableStars(true);
+    }, 1500);
 
   }
 
@@ -51,8 +52,6 @@ export const MainLayout = () => {
 
   return (
     <Box className={styles.layout}>
-
-      <Stars />
 
       <Home />
 
