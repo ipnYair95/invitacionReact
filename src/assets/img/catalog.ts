@@ -13,6 +13,13 @@ import CROWN from './crown.webp';
 import BUDUS from './bubu.jpg';
 import LETTER from './letter.jpg';  
 import PARTY_SVG from './party.svg';
+import STEP1 from './step1.jpg'
+import STEP2 from './step2.jpg';
+import STEP3 from './step3.jpg';
+import STEP4 from './step4.jpg';
+import STEP5 from './step5.jpg';
+import STEP6 from './step6.jpg';
+import STEP7 from './step7.jpg';
 
 export const IMG = {
     BACKGROUND,
@@ -29,5 +36,12 @@ export const IMG = {
     CROWN,
     BUDUS,
     LETTER,
-    PARTY_SVG
+    PARTY_SVG,
+    STEP1,
+    STEP2,
+    STEP3,
+    STEP4,
+    STEP5,
+    STEP6,
+    STEP7
 }

@@ -10,3 +10,4 @@ export * from './money-cards';
 export * from './confirm';
 export * from './ticket';
 export * from './card-presentation';
+export * from './Itinerary';
