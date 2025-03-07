@@ -1,5 +1,5 @@
-import { Box } from "@mui/material"
 import styles from './VerticalTimeline.module.scss'
+import { Box } from "@mui/material"
 import { TimelineItem } from "./components/timeline-item/TimelineItem"
 
 interface Props {
