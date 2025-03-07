@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import styles from './TimelineItem.module.scss'
+import styles from './Timelineitem.module.scss';
 import { IItineraryItem } from '../../../../pages/Itinerary/constants';
 
 interface Props {
