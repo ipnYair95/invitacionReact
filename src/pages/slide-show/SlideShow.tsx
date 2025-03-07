@@ -6,11 +6,6 @@ import { CustomSlideshow, SeparatorHearTitle } from '../../components';
 import { SECTIONS } from '../../constants';
 
 import AOS from 'aos';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/effect-fade';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 export const SlideShow = () => {
