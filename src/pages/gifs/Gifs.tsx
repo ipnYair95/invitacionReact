@@ -3,7 +3,6 @@ import styles from './Gifs.module.scss';
 import { Box } from "@mui/material"
 import { GIFS } from './constants';
 import { CardGif } from './components';
-import { nanoid } from 'nanoid';
 import { SECTIONS } from '../../constants';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -25,7 +24,7 @@ export const Gifs = () => {
 
       <Box className={styles.gifs}>
         {
-          gifs.map((gif) => <CardGif key={nanoid()}  {...gif} />)
+          gifs.map((gif) => <CardGif key={gif.title}  {...gif} />)
         }
       </Box>
 

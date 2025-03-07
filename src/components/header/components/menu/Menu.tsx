@@ -1,7 +1,6 @@
 import { Box, Drawer, List, ListItem, ListItemButton, ListItemText } from '@mui/material';
 import { navItems } from '../../constants';
 import styles from './Menu.module.scss';
-import { nanoid } from 'nanoid';
 
 export const Menu = ({ handleDrawerToggle, mobileOpen, window, goTo }: any) => {
 
@@ -17,7 +16,7 @@ export const Menu = ({ handleDrawerToggle, mobileOpen, window, goTo }: any) => {
 
                 <List>
                     {navItems.map((item) => (
-                        <ListItem key={nanoid()} disablePadding>
+                        <ListItem key={item.title} disablePadding>
                             <ListItemButton sx={{ textAlign: 'center' }} onClick={ () => goTo(item.section) } >
                                 <ListItemText primary={item.title} />
                             </ListItemButton>

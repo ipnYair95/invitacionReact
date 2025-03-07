@@ -6,7 +6,6 @@ import { Menu } from "./components";
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import { useScrolling } from '../../hooks/useScrolling';
 import { SECTIONS } from '../../constants';
-import { nanoid } from 'nanoid';
 
 
 export const Header = () => {
@@ -54,7 +53,7 @@ export const Header = () => {
         <Box className={styles.menuItems}  >
           {
             navItems.map((item) => (
-              <Button className={styles.button} key={nanoid()} onClick={ () => goTo(item.section) }  >
+              <Button className={styles.button} key={item.title} onClick={ () => goTo(item.section) }  >
                 {item.title}
               </Button>
             ))

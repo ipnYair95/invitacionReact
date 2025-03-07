@@ -4,7 +4,6 @@ import { PLACES } from './constants';
 import { PlaceItem } from './components';
 import { SeparatorHearTitle } from '../../components';
 import { SECTIONS } from '../../constants';
-import { nanoid } from 'nanoid';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -26,7 +25,7 @@ export const Places = () => {
 
       <Box className={styles.places} >
         {
-          places.map((place) => <PlaceItem key={nanoid()} {...place} />)
+          places.map((place) => <PlaceItem key={place.reason} {...place} />)
         }
       </Box>
 

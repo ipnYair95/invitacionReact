@@ -2,7 +2,6 @@ import { Box } from '@mui/material';
 import styles from './Dedications.module.scss';
 import { DEDICATIONS } from './constants/constants';
 import { CardDedication } from './components/card-dedication/CardDedication';
-import { nanoid } from 'nanoid';
 import { useState, useEffect } from 'react';
 import { SECTIONS } from '../../constants';
 import AOS from 'aos';
@@ -45,7 +44,7 @@ export const Dedications = () => {
       <Box className={styles.container} data-aos="fade-up">
 
         {
-          dedications.map((dedication) => <CardDedication key={nanoid()} {...dedication} />)
+          dedications.map((dedication) => <CardDedication key={dedication.to} {...dedication} />)
         }
 
       </Box>
