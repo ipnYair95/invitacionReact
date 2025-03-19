@@ -43,7 +43,7 @@ export const Ticket = () => {
                 <Typography className={`${styles.name} text-shadow`}> {ticket.name} </Typography>
 
                 <Box className={styles.svgContainer} >
-                    <img className={styles.svg} src={IMG.PARTY_SVG} alt="party" />
+                    <img className={styles.svg} src={IMG.LOGO_TICKET} alt="party" />
                 </Box>
 
                 <Box className={styles.textContainer}>

@@ -15,7 +15,7 @@ import GIF from './gif.png';
 import CROWN from './crown.webp';
 import BUDUS from './bubu.jpg';
 import LETTER from './letter.jpg';  
-import PARTY_SVG from './party.svg';
+import LOGO_TICKET from './logo-ticket.png';
 import STEP1 from './step1.jpg'
 import STEP2 from './step2.jpg';
 import STEP3 from './step3.jpg';
@@ -42,7 +42,7 @@ export const IMG = {
     CROWN,
     BUDUS,
     LETTER,
-    PARTY_SVG,
+    LOGO_TICKET,
     STEP1,
     STEP2,
     STEP3,
