@@ -37,7 +37,7 @@ export const DATABASE: IDataBase[] = [
   { id: 19, name: "Yatziri", quantity: 1 },
   { id: 20, name: "Venecia", quantity: 8 },
   { id: 21, name: "Lilia ", quantity: 10 },
-  { id: 22, name: "Veronica", quantity: 4 },
+  { id: 22, name: "Veronica", quantity: 2 },
   { id: 23, name: "Brisa", quantity: 5 },
   { id: 24, name: "Gladis", quantity: 2 },
   { id: 25, name: "Devhora", quantity: 2 },
@@ -48,4 +48,6 @@ export const DATABASE: IDataBase[] = [
   { id: 30, name: "Gustavo", quantity: 0 },
   { id: 31, name: "Alexa", quantity: 1 },
   { id: 32, name: "Angelica", quantity: 1 },
+  { id: 33, name: "Arturo", quantity: 1 },
+  { id: 34, name: "Diego", quantity: 1 },
 ];
