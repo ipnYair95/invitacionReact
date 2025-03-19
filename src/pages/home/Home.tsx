@@ -1,4 +1,4 @@
-import { Box, Card, Typography } from '@mui/material';
+import { Box, Card, IconButton, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { TargetDate, VideoBackground } from './components';
+import SwipeUpIcon from '@mui/icons-material/SwipeUp';
 
 export const Home = () => {
 
@@ -54,6 +55,10 @@ export const Home = () => {
       <Box>
         <Countdown date="2025-05-31T15:00:00" renderer={renderer} />
       </Box>
+
+      <IconButton className={styles.hand} >
+        <SwipeUpIcon />
+      </IconButton>
 
     </Box>
   )
