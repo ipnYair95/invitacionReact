@@ -3,6 +3,9 @@ import LOGO from './logo.jpg';
 import IMG1 from './img1.jpg';
 import IMG2 from './img2.jpg';
 import IMG3 from './img3.jpg';
+import IMG4 from './img4.jpg';
+import IMG5 from './img5.jpg';
+import IMG6 from './img6.jpg';
 import MISA from './misa.jpg';
 import FIESTA from './fiesta.jpg';
 import SPECIAL from './special.jpg';
@@ -27,6 +30,9 @@ export const IMG = {
     IMG1,
     IMG2,
     IMG3,
+    IMG4,
+    IMG5,
+    IMG6,
     MISA,
     FIESTA,
     SPECIAL,

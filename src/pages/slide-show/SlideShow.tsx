@@ -10,7 +10,7 @@ import { useEffect } from 'react';
 
 export const SlideShow = () => {
 
-  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3];
+  const images = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5, IMG.IMG6];
 
   useEffect(() => {
     AOS.init();
