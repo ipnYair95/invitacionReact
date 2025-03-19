@@ -44,7 +44,7 @@ export const Home = () => {
         <Box className={styles.cardContainer} >
           <Card className={styles.card} >
             <Typography className={`${styles.text} title-shadow`}>
-              Como en un cuento de Disney, hoy decimos sí, acepto, con el ronroneo de un amor eterno, el recuerdo de quienes nos guiaron desde el cielo, y la pregunta cómo pagarte por todo lo que me das
+              Como en un cuento de Disney, hoy decimos 'sí, acepto', con el ronroneo de un amor eterno, el recuerdo de quienes nos guían desde el cielo y la pregunta: ¿cómo pagarte por todo lo que me das?
             </Typography>
           </Card>
         </Box>
