@@ -1,8 +1,7 @@
-import { Box } from "@mui/material"
+import { Box, IconButton } from "@mui/material"
 import styles from './ButtonHeart.module.scss';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import TouchAppIcon from '@mui/icons-material/TouchApp';
-
+import SwipeUpIcon from '@mui/icons-material/SwipeUp';
 
 export const ButtonHeart = ({ onClick }: any) => {
   return (
@@ -10,7 +9,9 @@ export const ButtonHeart = ({ onClick }: any) => {
 
       <FavoriteIcon className={styles.heart} />
 
-      <TouchAppIcon className={styles.touch} />
+      <IconButton className={styles.hand} >
+        <SwipeUpIcon />
+      </IconButton>
 
     </Box>
   )

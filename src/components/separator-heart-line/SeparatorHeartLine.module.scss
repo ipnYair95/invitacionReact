@@ -1,0 +1,47 @@
+.separator{
+    width: 100%;
+    margin: 16px 0px;
+    padding: 0px 15%;
+    position: relative;
+
+    .divider{
+        width: 100%;
+        background-color: var(--primary);
+        font-size: 2px;
+    }
+
+    .icon{
+        background: #fff;
+        border: radius 50%;
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, -50%);        
+
+        .heart{
+            animation: heart 3s linear infinite;
+        }
+
+    }
+
+    @keyframes heart {
+        0% {
+            transform: scale(0.8)
+        }
+
+        50% {
+            transform: scale(1.0)
+        }    
+
+        100% {
+            transform: scale(0.8)
+        }
+    }
+
+    
+
+}

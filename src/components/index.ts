@@ -10,3 +10,4 @@ export * from './custom-slideshow';
 export * from './not-found';
 export * from './open';
 export * from './vertical-timeline';
+export * from './separator-heart-line';
