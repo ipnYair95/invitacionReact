@@ -6,15 +6,15 @@
 
 :root {
 
-  --primary: #4223d6; /* Color principal, podría usarse para botones principales o acciones destacadas */
+  --primary: #BFA450; /* Color principal, podría usarse para botones principales o acciones destacadas */
 
-  --secondary: #724fe0; /* Color secundario, para botones secundarios o elementos destacados menos prominentes */
+  --secondary: #BF9D5E; /* Color secundario, para botones secundarios o elementos destacados menos prominentes */
 
-  --accent: #a17bea; /* Color de acento, para resaltar detalles o elementos decorativos */
+  --accent: #F2DCB3; /* Color de acento, para resaltar detalles o elementos decorativos */
 
-  --warning: #d0a8f5; /* Color de advertencia, para notificaciones o mensajes menos críticos */
+  --warning: #A69C0F; /* Color de advertencia, para notificaciones o mensajes menos críticos */
 
-  --background-alt: #ffd4ff; /* Color alternativo de fondo, para áreas suaves o resaltos ligeros */
+  --background-alt: #F0F0F2; /* Color alternativo de fondo, para áreas suaves o resaltos ligeros */
   
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .title-shadow{
-  text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra sutil y neutra */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil y neutra */
 }
 
 .secondary-shadow{

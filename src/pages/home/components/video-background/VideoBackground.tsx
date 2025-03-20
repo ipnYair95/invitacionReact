@@ -1,11 +1,10 @@
 import { Box } from '@mui/material'
-import { VIDEO } from '../../../../assets'
 import styles from './VideoBackground.module.scss'
 
-export const VideoBackground = () => {
+export const VideoBackground = ({src, className}: any) => {
   return (
-    <Box className={styles.videoBackground}>
-        <video className={styles.video} src={VIDEO.BACKGROUND} autoPlay loop muted ></video>
+    <Box className={`${styles.videoBackground} ${className}`}>
+        <video className={styles.video} src={src} autoPlay loop muted ></video>
     </Box>
   )
 }

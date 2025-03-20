@@ -9,4 +9,3 @@ export * from './buttons';
 export * from './custom-slideshow';
 export * from './not-found';
 export * from './open';
-export * from './vertical-timeline';

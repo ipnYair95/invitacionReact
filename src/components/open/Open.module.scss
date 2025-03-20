@@ -6,46 +6,23 @@
     justify-content: center;
     align-items: center;
 
-    .avatar {
-        position: relative;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        background: #fff;
-        padding: 28px;
-
-        .img {
-            width: 100%;
-            aspect-ratio: 1/1;
-            object-fit: contain;
-        }
-
-        .hand {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: hand 2s linear infinite;
-
-            * {
-                font-size: 40px;
-            }
-
-            @keyframes hand {
-                0% {
-                    transform: scale(1.5)
-                }
-
-                50% {
-                    transform: scale(0.9)
-                }
-
-                100% {
-                    transform: scale(1.5)
-                }
-            }
-        }
-
+    .img {
+        width: 200px;
+        height: 200px;
     }
 
+    .pulse {
+        animation: pulse-animation 2s infinite;
+    }
+
+}
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
 }

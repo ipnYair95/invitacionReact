@@ -22,15 +22,15 @@
         gap: 16px;
 
         .title {
-            font-size: 38px;
-            color: #fff;
+            font-size: 50px;
+            color: var(--primary);
             font-family: Dancing Script, cursive;
             padding: 24px 0px;
         }
 
         .name {
             font-size: 58px;
-            color: #fff;
+            color: var(--primary);
             font-family: Dancing Script, cursive;
             line-height: 1;
         }
@@ -73,10 +73,22 @@
 
                 .text {
                     font-size: 18px;
-                    color: #fff;
+                    color: #ffffff;
                     font-family: Dancing Script, cursive;
                 }
             }
+        }
+
+        .heart{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .await{
+                font-size: 24px;
+                color: var(--secondary);
+            }
+            
         }
     }
 
@@ -126,14 +138,3 @@
     }
 
 }
-
-/* .home::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.4);
-    z-index: -1; 
-} */

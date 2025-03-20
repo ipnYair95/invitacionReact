@@ -1,4 +1,4 @@
-import { Box, Card, IconButton, Typography } from '@mui/material';
+import { Avatar, Box, IconButton, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
@@ -7,12 +7,28 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { TargetDate, VideoBackground } from './components';
 import SwipeUpIcon from '@mui/icons-material/SwipeUp';
+import { IMG, VIDEO } from '../../assets';
+import { ButtonHeart } from '../../components';
+import { SECTIONS } from '../../constants';
 
 export const Home = () => {
 
   useEffect(() => {
     AOS.init();
   }, [])
+
+  const goTo = (e: any) => {
+
+    e.preventDefault();
+
+    const element: any = document.querySelector(`#${SECTIONS.SUMMARY}`);
+
+    window.scrollTo({
+      top: element.offsetTop,
+      behavior: "smooth",
+    })
+
+  }
 
   const renderer = ({ days, hours, minutes, seconds }: any) => {
 
@@ -28,26 +44,22 @@ export const Home = () => {
   return (
     <Box className={styles.home} data-aos="zoom-in">
 
-      <VideoBackground />
+      <VideoBackground src={VIDEO.BACKGROUND} />
 
       <Box className={styles.container}>
 
-        <Typography className={`${styles.title} title-shadow`} > Nuestra boda </Typography>
+        <Typography className={`${styles.title} title-shadow`} > Mis XV años </Typography>
 
-        <Typography className={`${styles.name} title-shadow`} > Yair </Typography>
+        <Avatar src={IMG.AVATAR} className={styles.photo} />
 
-        <Typography className={`${styles.name} title-shadow`} >  & </Typography>
-
-        <Typography className={`${styles.name} title-shadow`} sx={{ paddingBottom: '24px' }} > Yazmín </Typography>
+        <Typography className={`${styles.name} title-shadow`} > Ximena </Typography>
 
         <TargetDate />
 
-        <Box className={styles.cardContainer} >
-          <Card className={styles.card} >
-            <Typography className={`${styles.text} title-shadow`}>
-              Como en un cuento de Disney, hoy decimos 'sí, acepto', con el ronroneo de un amor eterno, el recuerdo de quienes nos guían desde el cielo y la pregunta: ¿cómo pagarte por todo lo que me das?
-            </Typography>
-          </Card>
+        <Box className={styles.heart}>
+          <Typography className={styles.await}> ¡Te esperamos! </Typography>
+
+          <ButtonHeart onClick={goTo} />
         </Box>
 
       </Box>

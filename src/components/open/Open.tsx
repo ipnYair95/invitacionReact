@@ -1,7 +1,6 @@
-import { Box, IconButton } from '@mui/material'
+import { Avatar, Box } from '@mui/material'
 import styles from './Open.module.scss'
 import { IMG } from '../../assets';
-import PanToolAltOutlinedIcon from '@mui/icons-material/PanToolAltOutlined';
 
 interface Props {
     onClick: () => void;
@@ -10,17 +9,9 @@ interface Props {
 export const Open = ({ onClick }: Props) => {
 
     return (
-        <Box className={styles.open}>
+        <Box className={styles.open} onClick={onClick} >
 
-            <Box className={styles.avatar} onClick={onClick} >
-
-                <img className={styles.img} src={IMG.LETTER} alt="letter" />
-
-                <IconButton className={styles.hand} >
-                    <PanToolAltOutlinedIcon />
-                </IconButton>
-
-            </Box>
+            <Avatar className={`${styles.img} ${styles.pulse}`} src={IMG.LETTER} />
 
         </Box>
     )

@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader, Open } from "../components";
-import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow, Itinerary } from "../pages";
+import { Home, Places, Footer, Confirm, People, Gifs, Dressing, Summary } from "../pages";
 import { useState } from 'react';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
@@ -28,7 +28,7 @@ export const MainLayout = () => {
     
     setTimeout(() => {
       setIsLoading(false);
-      setEnableStars(true);
+      setEnableStars(false);
     }, 1500);
 
   }
@@ -55,15 +55,15 @@ export const MainLayout = () => {
 
       <Home />
 
-      <Ticket />
+      <Summary />
 
-      <CardPresentation />
+      <People />
 
-      <SlideShow />
+      <Places />
 
-      <Places />      
+      <Gifs />
 
-      <Itinerary />
+      <Dressing />
 
       <Confirm />
 
