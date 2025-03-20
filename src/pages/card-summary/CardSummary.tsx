@@ -1,10 +1,11 @@
 import { Box, Typography } from "@mui/material";
 import styles from "./CardSummary.module.scss";
 import { SeparatorHeartLine } from "../../components";
+import { SECTIONS } from "../../constants";
 
 export const CardSummary = () => {
   return (
-    <Box className={styles.cardSummary}>
+    <Box className={styles.cardSummary} id={SECTIONS.SUMMARY}>
 
       <Box className={styles.container}>
 
