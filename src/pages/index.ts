@@ -6,5 +6,4 @@ export * from './gifs';
 export * from './footer';
 export * from './people';
 export * from './confirm';
-export * from './card-presentation';
 export * from './dressing';
