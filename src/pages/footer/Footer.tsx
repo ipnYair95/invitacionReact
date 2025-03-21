@@ -13,7 +13,7 @@ export const Footer = () => {
   }, [])
 
   return (
-    <Box className={styles.footer} data-aos="fade-up">
+    <Box className={styles.footer} >
 
       <Typography className={styles.text} > Haz de esto algo inolvidable </Typography>
 
