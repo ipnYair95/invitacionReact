@@ -7,7 +7,7 @@ import HANDSOME from './handsome.png';
 import GIF from './gif.png';
 import CROWN from './crown.webp';
 import LETTER from './letter.png'; 
-import AVATAR from './avatar.jpg';
+import AVATAR from './avatar.png';
 import DRESS from './dress.png';
 
 export const IMG = {

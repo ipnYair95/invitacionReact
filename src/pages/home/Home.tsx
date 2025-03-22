@@ -1,4 +1,4 @@
-import { Avatar, Box, IconButton, Typography } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
@@ -50,7 +50,7 @@ export const Home = () => {
 
         <Typography className={`${styles.title} title-shadow`} > Mis XV años </Typography>
 
-        <Avatar src={IMG.AVATAR} className={styles.photo} />
+        <img src={IMG.AVATAR} alt="" />
 
         <Typography className={`${styles.name} title-shadow`} > Ximena </Typography>
 
