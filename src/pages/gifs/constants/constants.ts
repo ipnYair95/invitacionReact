@@ -8,5 +8,5 @@ export interface IGif {
 export const GIFS: IGif[] = [
     { title: "Venir guap@", img: IMG.HANDSOME },
     { title: "Con ganas de bailar y divertirse", img: IMG.PARTY },
-    { title: "Mi regalo uwu", img: IMG.GIF }    
+    { title: "Mi regalo", img: IMG.GIF }    
 ];
