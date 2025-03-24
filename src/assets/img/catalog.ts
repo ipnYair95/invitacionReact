@@ -9,6 +9,7 @@ import CROWN from './crown.webp';
 import LETTER from './letter.png'; 
 import AVATAR from './avatar.png';
 import DRESS from './dress.png';
+import INVITATION from './invitacion.png';
 
 export const IMG = {
     LOGO,
@@ -21,5 +22,6 @@ export const IMG = {
     CROWN,
     LETTER,
     AVATAR,
-    DRESS
+    DRESS,
+    INVITATION
 }

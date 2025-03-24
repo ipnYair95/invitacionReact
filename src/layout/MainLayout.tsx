@@ -9,6 +9,8 @@ import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { CardSummary } from '../pages/card-summary';
+import DownloadIcon from '@mui/icons-material/Download';
+import { IMG } from '../assets';
 
 export const MainLayout = () => {
 
@@ -32,6 +34,10 @@ export const MainLayout = () => {
       setEnableStars(false);
     }, 1500);
 
+  }
+
+  const onDownload = () => {
+    window.open(IMG.INVITATION, '_blank');
   }
 
 
@@ -74,6 +80,9 @@ export const MainLayout = () => {
         sx={{ position: 'fixed', bottom: 16, right: 16 }}
         icon={<SettingsIcon />}
       >
+
+        <SpeedDialAction className={styles.speedDialAction} icon={<DownloadIcon />} onClick={onDownload} />
+
         <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
 
       </SpeedDial>
