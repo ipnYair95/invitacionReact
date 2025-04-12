@@ -53,7 +53,7 @@ export const Home = () => {
       </Box>
 
       <Box>
-        <Countdown date="2025-05-02T14:00:00" renderer={renderer} />
+        <Countdown date="2025-05-31T14:00:00" renderer={renderer} />
       </Box>
 
       <IconButton className={styles.hand} >
