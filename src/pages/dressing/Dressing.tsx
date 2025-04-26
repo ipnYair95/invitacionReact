@@ -4,7 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { SeparatorHearTitle } from "../../components";
-import { IMG } from "../../assets";
 
 
 export const Dressing = () => {
@@ -24,7 +23,7 @@ export const Dressing = () => {
             </Typography>
 
             <Box className={styles.image}>
-                <img src={IMG.DRESS} alt="dress" />
+                <img src={""} alt="dress" />
             </Box>
 
         </Box>

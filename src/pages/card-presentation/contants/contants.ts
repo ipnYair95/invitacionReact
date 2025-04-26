@@ -6,11 +6,11 @@ export interface IParent {
 
 export const PARENTS = [
     {
-        title: 'Padres de la novia',
-        names: ['Antonio Brum', 'Yazmín Chávez']
+        title: 'Mis padres',
+        names: ['Brayan Alexis', 'Esmeralda']
     },
     {
-        title: 'Padres del novio',
-        names: ['Blanca Marín']
+        title: 'Mis padrinos',
+        names: ['Yair Marín', 'Yazmín Brum']
     }
 ];

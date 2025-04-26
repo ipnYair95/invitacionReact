@@ -4,7 +4,6 @@ import 'aos/dist/aos.css';
 import { Box, Typography } from "@mui/material";
 import styles from './Ticket.module.scss';
 import { HeaderTicket, TextItem } from "./components";
-import { IMG } from "../../assets";
 import { useTicket } from "./hooks";
 import { NotFound } from "../../components";
 import { SECTIONS } from "../../constants";
@@ -43,7 +42,7 @@ export const Ticket = () => {
                 <Typography className={`${styles.name} text-shadow`}> {ticket.name} </Typography>
 
                 <Box className={styles.svgContainer} >
-                    <img className={styles.svg} src={IMG.LOGO_TICKET} alt="party" />
+                    <img className={styles.svg} src={""} alt="party" />
                 </Box>
 
                 <Box className={styles.textContainer}>

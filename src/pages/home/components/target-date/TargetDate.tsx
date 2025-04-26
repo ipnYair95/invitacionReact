@@ -7,15 +7,15 @@ export const TargetDate = () => {
   return (
     <Box className={styles.targetDate}>
 
-      <TargetItem label="SÁBADO" />
+      <TargetItem label="JUEVES" />
 
       <Box className={styles.date}>
-        <Typography className={`${styles.day} title-shadow`}> 31 </Typography>
+        <Typography className={`${styles.day} title-shadow`}>  5 </Typography>
 
-        <Typography className={`${styles.month} title-shadow`}> MAYO </Typography>
+        <Typography className={`${styles.month} title-shadow`}> JUNIO </Typography>
       </Box>
 
-      <TargetItem label="15:00 HRS" />
+      <TargetItem label="16:00 HRS" />
 
     </Box>
   );

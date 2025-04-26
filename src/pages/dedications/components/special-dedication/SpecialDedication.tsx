@@ -2,7 +2,6 @@ import styles from './SpecialDedication.module.scss';
 import { Box, IconButton, Typography } from "@mui/material"
 import CloseIcon from '@mui/icons-material/Close';
 import { SeparatorHearTitle } from '../../../../components';
-import { IMG } from '../../../../assets';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -64,7 +63,7 @@ export const SpecialDedication = ({ onClose }: any) => {
           </Box>
 
           <Box className={styles.img} >
-            <img src={IMG.SPECIAL} alt="" />
+            <img src={""} alt="" />
           </Box>
 
         </Box>

@@ -11,3 +11,4 @@ export * from './not-found';
 export * from './open';
 export * from './vertical-timeline';
 export * from './separator-heart-line';
+export * from './video-background';
