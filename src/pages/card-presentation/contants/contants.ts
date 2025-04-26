@@ -7,7 +7,7 @@ export interface IParent {
 export const PARENTS = [
     {
         title: 'Mis padres',
-        names: ['Brayan Alexis', 'Esmeralda']
+        names: ['Brihan Medina', 'Esmeralda Martínez']
     },
     {
         title: 'Mis padrinos',
