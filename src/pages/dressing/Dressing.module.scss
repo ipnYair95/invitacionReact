@@ -1,0 +1,28 @@
+.dressingContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+    .text {
+        font-size: 24px;
+        color: var(--secondary);
+        text-align: center;
+    }
+
+    .image {
+        margin: 16px 0px;        
+        width: 200px;
+        height: 200px;
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+    }
+
+}
