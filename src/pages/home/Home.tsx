@@ -7,27 +7,12 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { TargetDate } from './components';
 import { IMG } from '../../assets';
-import { ButtonHeart } from '../../components';
-import { SECTIONS } from '../../constants';
 
 export const Home = () => {
 
   useEffect(() => {
     AOS.init();
   }, [])
-
-  const goTo = (e: any) => {
-
-    e.preventDefault();
-
-    const element: any = document.querySelector(`#${SECTIONS.SUMMARY}`);
-
-    window.scrollTo({
-      top: element.offsetTop,
-      behavior: "smooth",
-    })
-
-  }
 
   const renderer = ({ days, hours, minutes, seconds }: any) => {
 
