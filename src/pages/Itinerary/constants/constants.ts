@@ -38,7 +38,7 @@ export const ITINERARY_ITEMS: IItineraryItem[] = [
         image: IMG.STEP6
     },
     {               
-        hour: '10:00 PM',
+        hour: '9:30 PM',
         description: 'Gracias por venir',
         image: IMG.STEP7
     }
