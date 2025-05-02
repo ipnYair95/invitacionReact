@@ -6,10 +6,11 @@ import { SECTIONS } from '../../constants';
 
 import AOS from 'aos';
 import { useEffect } from 'react';
+import { IMG } from '../../assets';
 
 export const SlideShow = () => {
 
-  const images: any[] = [];
+  const images: any[] = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4];
 
   useEffect(() => {
     AOS.init();

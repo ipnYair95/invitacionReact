@@ -47,17 +47,12 @@ export const Home = () => {
 
         <Typography className={`${styles.title} title-shadow`} > Mi bautizo </Typography>
 
+        <img src={IMG.LOGO} alt="" />        
+
         <Typography className={`${styles.name} title-shadow`} > Oliver Alexander </Typography>
 
-        <img src={IMG.LOGO} alt="" />
 
         <TargetDate />
-
-        <Box className={styles.heart}>
-          <Typography className={styles.await}> ¡Te esperamos! </Typography>
-
-          <ButtonHeart onClick={goTo} />
-        </Box>
 
         <Box className={styles.cardContainer} >
           <Card className={styles.card} >
