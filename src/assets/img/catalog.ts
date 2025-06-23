@@ -23,6 +23,9 @@ import STEP4 from './step4.jpg';
 import STEP5 from './step5.jpg';
 import STEP6 from './step6.jpg';
 import STEP7 from './step7.jpg';
+import AVATAR from './avatar.png';
+import STAR from './star.png';
+import NUMBER from './number.png';
 
 export const IMG = {
     BACKGROUND,
@@ -49,5 +52,8 @@ export const IMG = {
     STEP4,
     STEP5,
     STEP6,
-    STEP7
+    STEP7,
+    AVATAR,
+    STAR,
+    NUMBER
 }

@@ -7,59 +7,71 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { TargetDate, VideoBackground } from './components';
 import SwipeUpIcon from '@mui/icons-material/SwipeUp';
+import { IMG } from '../../assets';
 
 export const Home = () => {
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
-  const renderer = ({ days, hours, minutes, seconds }: any) => {
+    const renderer = ({ days, hours, minutes, seconds }: any) => {
 
-    return <CountdownCustom
-      days={days}
-      hours={hours}
-      minutes={minutes}
-      seconds={seconds}
-    />;
+        return <CountdownCustom
+            days={days}
+            hours={hours}
+            minutes={minutes}
+            seconds={seconds}
+        />;
 
-  };
+    };
 
-  return (
-    <Box className={styles.home} data-aos="zoom-in">
+    return (
+        <Box className={styles.home} data-aos="zoom-in">
 
-      <VideoBackground />
+            <VideoBackground />
 
-      <Box className={styles.container}>
+            <Box className={styles.container}>
 
-        <Typography className={`${styles.title} title-shadow`} > Nuestra boda </Typography>
+                <Box sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    gap: '8px'
+                }}>
 
-        <Typography className={`${styles.name} title-shadow`} > Yair </Typography>
+                    <Typography className={`${styles.title} title-shadow`} > MIS </Typography>
 
-        <Typography className={`${styles.name} title-shadow`} >  & </Typography>
+                    <Typography className={`${styles.title} title-shadow`} > XVIII </Typography>                    
 
-        <Typography className={`${styles.name} title-shadow`} sx={{ paddingBottom: '24px' }} > Yazmín </Typography>
+                    <Typography className={`${styles.title} title-shadow`} > Años </Typography>    
 
-        <TargetDate />
+                </Box>
 
-        <Box className={styles.cardContainer} >
-          <Card className={styles.card} >
-            <Typography className={`${styles.text} title-shadow`}>
-              Como en un cuento de Disney, hoy decimos 'sí, acepto', con el ronroneo de un amor eterno, el recuerdo de quienes nos guían desde el cielo y la pregunta: ¿cómo pagarte por todo lo que me das?
-            </Typography>
-          </Card>
+                <Typography className={`${styles.name} title-shadow`} > Fernando Antoan </Typography>
+
+                <Box className={styles.separator} />
+
+                <TargetDate />
+
+                <Box className={styles.cardContainer} >
+                    <Card className={styles.card} >
+                        <Typography className={`${styles.text} title-shadow`}>
+                            "Hoy celebramos más que un cumpleaños, celebramos el inicio de tus propios sueños. Que esta nueva etapa esté llena de aprendizajes, alegrías y grandes aventuras. ¡Feliz 18!"
+                        </Typography>
+                    </Card>
+                </Box>
+
+            </Box>
+
+            <Box>
+                <Countdown date="2025-07-26T17:00:00" renderer={renderer} />
+            </Box>
+
+            <IconButton className={styles.hand} >
+                <SwipeUpIcon />
+            </IconButton>
+
         </Box>
-
-      </Box>
-
-      <Box>
-        <Countdown date="2025-05-31T14:00:00" renderer={renderer} />
-      </Box>
-
-      <IconButton className={styles.hand} >
-        <SwipeUpIcon />
-      </IconButton>
-
-    </Box>
-  )
+    )
 }

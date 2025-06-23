@@ -22,7 +22,7 @@ export const CardPresentation = () => {
           A veces lo que empieza como una locura se convierte en lo mejor de tu vida
         </Typography>
 
-        <img className={styles.presentation} src={IMG.BUDUS} alt="presentation" />
+        <img className={styles.presentation} src={IMG.AVATAR} alt="presentation" />
 
         {
           PARENTS.map((parent) => <Parent key={parent.title} parent={parent} />)

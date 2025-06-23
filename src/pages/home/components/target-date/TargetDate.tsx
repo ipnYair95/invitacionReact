@@ -10,12 +10,12 @@ export const TargetDate = () => {
       <TargetItem label="SÁBADO" />
 
       <Box className={styles.date}>
-        <Typography className={`${styles.day} title-shadow`}> 31 </Typography>
+        <Typography className={`${styles.day} title-shadow`}> 26 </Typography>
 
-        <Typography className={`${styles.month} title-shadow`}> MAYO </Typography>
+        <Typography className={`${styles.month} title-shadow`}> JULIO </Typography>
       </Box>
 
-      <TargetItem label="15:00 HRS" />
+      <TargetItem label="17:00 HRS" />
 
     </Box>
   );
