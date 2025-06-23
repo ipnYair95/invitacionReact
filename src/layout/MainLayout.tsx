@@ -1,85 +1,82 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader, Open } from "../components";
-import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow, Itinerary } from "../pages";
+import { Home, Places, Footer, SlideShow, Gifs } from "../pages";
 import { useState } from 'react';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { CardSummary } from '../pages/card-summary';
 
 export const MainLayout = () => {
 
-  const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
-  const [isLoading, setIsLoading] = useState(true);
+    const [isLoading, setIsLoading] = useState(true);
 
-  const playing = useDataStore((state) => state.playing);
+    const playing = useDataStore((state) => state.playing);
 
-  const { setPlaying, setEnableStars } = useDataStore();
+    const { setPlaying, setEnableStars } = useDataStore();
 
-  usePlay();
+    usePlay();
 
-  const onClick = () => {
+    const onClick = () => {
 
-    setIsOpen(true);
-    setPlaying();
-    
-    setTimeout(() => {
-      setIsLoading(false);
-      setEnableStars(true);
-    }, 1500);
+        setIsOpen(true);
+        setPlaying();
 
-  }
+        setTimeout(() => {
+            setIsLoading(false);
+            setEnableStars(true);
+        }, 1500);
+
+    }
 
 
-  if (!isOpen) {
-    return <Open onClick={onClick} />
-  }
+    if (!isOpen) {
+        return <Open onClick={onClick} />
+    }
 
-  if (isLoading) {
+    if (isLoading) {
+
+        return (
+            <Box className={styles.open} >
+
+                <Loader />
+
+            </Box>
+        );
+
+    }
 
     return (
-      <Box className={styles.open} >
+        <Box className={styles.layout}>
 
-        <Loader />
+            <Home />
 
-      </Box>
+            <CardSummary />
+
+            <SlideShow />
+
+            <Places />
+
+            <Gifs />
+
+            <Footer />
+
+            <SpeedDial
+                className={styles.speedDial}
+                ariaLabel="SpeedDial basic example"
+                sx={{ position: 'fixed', bottom: 16, right: 16 }}
+                icon={<SettingsIcon />}
+            >
+                <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
+
+            </SpeedDial>
+
+        </Box >
     );
-
-  }
-
-  return (
-    <Box className={styles.layout}>
-
-      <Home />
-
-      <Ticket />
-
-      <CardPresentation />
-
-      <SlideShow />
-
-      <Places />      
-
-      <Itinerary />
-
-      <Confirm />
-
-      <Footer />
-
-      <SpeedDial
-        className={styles.speedDial}
-        ariaLabel="SpeedDial basic example"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
-        icon={<SettingsIcon />}
-      >
-        <SpeedDialAction className={styles.speedDialAction} icon={playing ? <MusicNoteIcon /> : <MusicOffIcon />} onClick={setPlaying} />
-
-      </SpeedDial>
-
-    </Box >
-  );
 
 }
