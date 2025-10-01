@@ -8,7 +8,7 @@ export const useTicket = () => {
 
     const [isLoading, setIsLoading] = useState(true);
 
-    const [ticket, setTicket] = useState<any>(null);
+    const [ticket, setTicket] = useState<IDataBase | null>(null);
 
     useEffect(() => {
 
@@ -26,11 +26,9 @@ export const useTicket = () => {
 
             const id = extractId(query);
 
-            const data = DATABASE.find((item) => item.id === id);
+            const data = DATABASE.find((item) => item.id === id) || null;
 
-            const normalizedData = normalizeData(data);
-
-            setTicket(normalizedData);
+            setTicket(data);
 
             setIsLoading(false);
 
@@ -43,22 +41,6 @@ export const useTicket = () => {
     const extractId = (query: string) => {
 
         return +query.split('-')[0];
-
-    }
-
-    const normalizeData = (data: IDataBase | undefined) => {
-
-        if (!data) {
-            return null;
-        }
-
-        return {
-            name: data.name,
-            data: [
-                { label: "Personas", value: data.quantity },
-                { label: "Fecha", value: '31-Mayo-2025' }
-            ]
-        }
 
     }
 

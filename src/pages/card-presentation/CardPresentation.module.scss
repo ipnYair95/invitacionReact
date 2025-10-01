@@ -14,8 +14,54 @@
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(2px);
         -webkit-backdrop-filter: blur(2px);
-        border-radius: 10px;
-        padding: 24px 16px;
+        border-radius: 24px;
+        overflow: hidden;
+
+        .cardHeader {
+            background: var(--secondary);
+            padding: 16px;
+            text-align: center;
+            position: relative;
+
+            .ornament {
+                font-size: 30px;
+                color: rgba(255, 255, 255, 0.9);
+                margin-bottom: 15px;
+            }
+
+            .phrase {
+                color: white;
+                font-size: 20px;
+                font-style: italic;
+                line-height: 1.6;
+                position: relative;
+                z-index: 2;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                font-family: Disney, cursive;
+            }
+        }
+
+        .cardHeader::before {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            top: -100px;
+            left: -50px;
+        }
+
+        .cardHeader::after {
+            content: '';
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 50%;
+            bottom: -75px;
+            right: -40px;
+        }
 
         .mainText {
             font-weight: bold;

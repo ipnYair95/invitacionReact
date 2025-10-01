@@ -1,7 +1,7 @@
 import styles from './MainLayout.module.scss';
 import { Box, SpeedDial, SpeedDialAction } from "@mui/material";
 import { Loader, Open } from "../components";
-import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow, Itinerary } from "../pages";
+import { Home, Places, Footer, Confirm, Ticket, CardPresentation, SlideShow } from "../pages";
 import { useState } from 'react';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import MusicOffIcon from '@mui/icons-material/MusicOff';
@@ -56,9 +56,9 @@ export const MainLayout = () => {
 
       <Home />
 
-      <Ticket />
-
       <CardPresentation />
+
+      <Ticket />
 
       <SlideShow />
             

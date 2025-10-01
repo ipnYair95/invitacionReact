@@ -3,21 +3,23 @@ import styles from './Parent.module.scss'
 import { IParent } from '../../contants'
 
 interface Props {
-  parent: IParent;
+    parent: IParent;
 }
 
 export const Parent = ({ parent }: Props) => {
-  return (
-    <Box className={styles.parent}>
+    return (
+        <Box className={styles.parent}>
 
-        <Typography className={`${styles.title}`} > { parent.title } </Typography>
+            <Typography className={`${styles.title}`} > {parent.title} </Typography>
 
-        {
-          parent.names.map((name) => (
-            <Typography className={styles.name} key={name}> { name } </Typography>
-          ))
-        }
+            {
+                parent.names.map((name) => (
+                    <Typography className={styles.name} key={name}> {name} </Typography>
+                ))
+            }
 
-    </Box>
-  )
+            <div className={styles.divider}>✦ ❋ ✦</div>
+
+        </Box>
+    )
 }

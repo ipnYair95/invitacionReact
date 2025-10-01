@@ -1,4 +1,4 @@
-import { Box, Card, IconButton, Typography } from '@mui/material';
+import { Box, IconButton, Typography } from '@mui/material';
 import styles from './Home.module.scss';
 import Countdown from 'react-countdown';
 import { CountdownCustom } from './components/countdown';
