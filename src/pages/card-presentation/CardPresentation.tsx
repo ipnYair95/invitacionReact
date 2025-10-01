@@ -19,7 +19,7 @@ export const CardPresentation = () => {
       <Box className={styles.container}>
 
         <Typography className={`${styles.mainText}`}>
-          A veces lo que empieza como una locura se convierte en lo mejor de tu vida
+          Hoy no es un día cualquiera, ¡es mi noche de XV!
         </Typography>
 
         <img className={styles.presentation} src={IMG.BUDUS} alt="presentation" />

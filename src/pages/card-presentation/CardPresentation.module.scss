@@ -1,6 +1,6 @@
 .cardPresentation {
 
-    width: 100%;   
+    width: 100%;
     padding: 16px;
 
     .container {
@@ -19,12 +19,16 @@
 
         .mainText {
             font-weight: bold;
-            font-size: 20px;
+            font-size: 24px;
             text-align: center;
         }
 
         .presentation {
             width: 150px;
+            mix-blend-mode: normal;
+            border-radius: 50%;
+            margin: 16px 0px;
+            object-fit: contain;
         }
 
     }

@@ -8,6 +8,7 @@ import MusicOffIcon from '@mui/icons-material/MusicOff';
 import { usePlay } from '../hooks';
 import { useDataStore } from '../store';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { Dressing } from '../pages/dressing';
 
 export const MainLayout = () => {
 
@@ -60,10 +61,10 @@ export const MainLayout = () => {
       <CardPresentation />
 
       <SlideShow />
+            
+      <Places />   
 
-      <Places />      
-
-      <Itinerary />
+      <Dressing />
 
       <Confirm />
 

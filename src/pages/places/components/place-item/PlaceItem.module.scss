@@ -10,6 +10,7 @@
     border-radius: 4px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     text-align: center;
+    animation: card 3s linear infinite;
 
     .reason {
         font-size: 24px;
@@ -54,6 +55,22 @@
         width: 100%;
         background-color: var(--primary);
         height: 2px;
+    }
+
+    @keyframes card {
+
+        0% {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        50% {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px, rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+
+        100% {
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        
     }
 
 }
