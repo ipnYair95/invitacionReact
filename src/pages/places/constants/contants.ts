@@ -12,7 +12,7 @@ export const PLACES: IPlace[] = [
     {
         reason: 'Misa',
         time: '5:45 p.m.',
-        placeName: 'Salón de fiestas Marginata',
+        placeName: 'Iglesia Virgen del Carmen',
         address: 'Turqueza Manzana 003, Rancho el Carmen, 56540 Ixtapaluca, Méx.',
         url: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d751.8954166845359!2d-98.93866720281613!3d19.3231158919611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1dc25c706a0d%3A0x104cf4ee57b10a82!2sIglesia%20Virgen%20del%20Carmen!5e0!3m2!1ses-419!2smx!4v1760022208509!5m2!1ses-419!2smx',
         img: IMG.MISA
