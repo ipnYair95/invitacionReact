@@ -20,11 +20,11 @@ export const Dressing = () => {
             <SeparatorHearTitle text='Dress code' />
 
             <Typography className={styles.text} >
-                "¡El rosa está reservado! Por favor, déjenlo descansar en el armario por esta ocasión."
+                La mezclilla descansa y el lila está ocupado, que la elegancia sea la invitada principal ✨
             </Typography>
 
             <Box className={styles.image}>
-                <img src={IMG.DRESS} alt="dress" />
+                <img src={IMG.DRESS} alt="dress" loading="lazy" />
             </Box>
 
         </Box>

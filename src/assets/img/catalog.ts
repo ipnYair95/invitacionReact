@@ -11,6 +11,12 @@ import BUDUS from './bubu.jpg';
 import LETTER from './letter.jpg';  
 import LOGO_TICKET from './logo-ticket.png';
 import DRESS from './dress.png';
+import IMG1 from './img1.jpeg';
+import IMG2 from './img2.jpeg';
+import IMG3 from './img3.jpeg';
+import IMG4 from './img4.jpeg';
+import IMG5 from './img5.jpeg';
+import IMG6 from './img6.jpeg';
 
 export const IMG = {
     BACKGROUND,
@@ -25,5 +31,11 @@ export const IMG = {
     BUDUS,
     LETTER,
     LOGO_TICKET,
-    DRESS
+    DRESS,
+    IMG1,
+    IMG2,
+    IMG3,
+    IMG4,
+    IMG5,
+    IMG6
 }

@@ -21,7 +21,7 @@ export const CustomSlideshow = ({ images, enableDots = false }: Props) => {
         {
           images.map((image) => (
             <Box key={image} className={styles.slide} data-testid="slide-id">
-              <img src={image} alt="" />
+              <img src={image} alt="carrusel-image" loading='lazy' />
             </Box>
           ))
         }

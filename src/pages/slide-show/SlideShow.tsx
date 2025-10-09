@@ -6,26 +6,27 @@ import { SECTIONS } from '../../constants';
 
 import AOS from 'aos';
 import { useEffect } from 'react';
+import { IMG } from '../../assets';
 
 export const SlideShow = () => {
 
-  const images: string[] = [];
+    const images: string[] = [IMG.IMG1, IMG.IMG2, IMG.IMG3, IMG.IMG4, IMG.IMG5, IMG.IMG6];
 
-  useEffect(() => {
-    AOS.init();
-  }, [])
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
-  return (
-    <Box className={styles.main} id={SECTIONS.SLIDES} data-aos="fade-up">
+    return (
+        <Box className={styles.main} id={SECTIONS.SLIDES} data-aos="fade-up">
 
-      <SeparatorHearTitle text={'Fotos'} />
+            <SeparatorHearTitle text={'Fotos'} />
 
-      <Box className={styles.slideContainer} >
+            <Box className={styles.slideContainer} >
 
-        <CustomSlideshow images={images} enableDots />
+                <CustomSlideshow images={images} enableDots />
 
-      </Box>
+            </Box>
 
-    </Box>
-  )
+        </Box>
+    )
 }

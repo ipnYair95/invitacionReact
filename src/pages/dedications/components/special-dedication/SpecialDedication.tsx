@@ -64,7 +64,7 @@ export const SpecialDedication = ({ onClose }: any) => {
           </Box>
 
           <Box className={styles.img} >
-            <img src={IMG.SPECIAL} alt="" />
+            <img src={IMG.SPECIAL} alt="img-special" loading='lazy' />
           </Box>
 
         </Box>

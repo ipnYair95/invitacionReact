@@ -18,7 +18,7 @@ export const TimelineItem = ({ item, isEven }: Props) => {
                 <Box className={styles.gridItem} sx={{
                     order: isEven ? 1 : 3
                 }}>
-                    <img src={item.image} alt="" />
+                    <img src={item.image} alt="timeline" loading='lazy' />
                 </Box>
 
                 <Box className={styles.gridItem} sx={{

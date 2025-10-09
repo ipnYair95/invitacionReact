@@ -12,7 +12,7 @@ export const Confirm = () => {
     }, [])
 
     const onClick = () => {
-        window.open('https://forms.gle/LJoi6RHewDthbfLN7', '_blank');
+        window.open('https://forms.gle/2F2My9YDMQUnsf3A9', '_blank');
     }
 
     return (

@@ -39,7 +39,7 @@ export const Home = () => {
                 <TargetDate />
 
                 <Box sx={{ zIndex: 1 }}>
-                    <Countdown date="2025-05-31T14:00:00" renderer={renderer} />
+                    <Countdown date="2025-11-15T17:45:00" renderer={renderer} />
                 </Box>
 
                 <IconButton className={styles.hand} >

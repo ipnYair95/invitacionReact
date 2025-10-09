@@ -58,8 +58,6 @@ export const MainLayout = () => {
 
       <CardPresentation />
 
-      <Ticket />
-
       <SlideShow />
             
       <Places />   
